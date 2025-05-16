@@ -86,3 +86,16 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "That bunch of goons, they sure don't\n"
 	.string "look good near the sea!$"
 
+Seafloor_EventScript_Seadra::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SEADRA, CRY_MODE_NORMAL
+	msgbox Seafloor_Seadra, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Seafloor_Seadra:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Seadra: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Draaa!$"
+

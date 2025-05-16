@@ -89,3 +89,41 @@ VictoryRoad_B1F_Text_HallePostBattle:
 	.string "Try to enjoy things the rest of\n"
 	.string "the way!$"
 
+VictoryRoad_B1F_EventScript_DRAKLOAK::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DRAKLOAK, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B1F_Drakloak, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B1F_Drakloak:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Drakloak: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Durahhhiiik...$"
+
+VictoryRoad_B1F_EventScript_Pupitar::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PUPITAR, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B1F_Pupitar, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B1F_Pupitar:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pupitar: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pupipii!$"
+
+VictoryRoad_B1F_EventScript_Metang::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_METANG, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B1F_Metang, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B1F_Metang:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Metang: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Taanmet$"

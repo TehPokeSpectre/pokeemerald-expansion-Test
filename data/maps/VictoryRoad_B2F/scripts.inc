@@ -106,3 +106,41 @@ VictoryRoad_B2F_Text_DiannePostBattle:
 	.string "You do have guts! I like that!\n"
 	.string "Keep it going!$"
 
+ VictoryRoad_B2F_EventScript_Sliggoo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SLIGGOO, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B2F_Sliggoo, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B2F_Sliggoo:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Sliggoo: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Gligoop?$"
+
+VictoryRoad_B2F_EventScript_Dragonair::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DRAGONAIR, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B2F_Dragonair, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B2F_Dragonair:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dragonair: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Nyyyair!$"
+
+VictoryRoad_B2F_EventScript_Shelgon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SHELGON, CRY_MODE_NORMAL
+	msgbox VictoryRoad_B2F_Shelgon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_B2F_Shelgon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Shelgon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Shelgurra!$"

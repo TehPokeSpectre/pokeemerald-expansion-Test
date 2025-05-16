@@ -200,3 +200,75 @@ Route114_Text_FossilManiacsHouseSign:
 Route114_Text_LanettesHouse:
 	.string "LANETTE'S HOUSE$"
 
+Route114_EventScript_Basculin::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BASCULIN, CRY_MODE_NORMAL
+	msgbox Route114_Basculin, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route114_Basculin:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Basculin: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Bassca...$"
+
+Route114_EventScript_Basculegion::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BASCULEGION, CRY_MODE_NORMAL
+	msgbox Route114_Basculegion, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route114_Basculegion:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Basculegion: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Culeegi!$"
+
+Route114_EventScript_Capsakid::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CAPSAKID, CRY_MODE_NORMAL
+	msgbox Route114_Capsakid, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route114_Capsakid:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Capsakid: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Caapsi!$"
+
+Route114_EventScript_Heliolisk::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HELIOLISK, CRY_MODE_NORMAL
+	msgbox Route114_Heliolisk, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route114_Heliolisk:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Heliolisk: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hiiisliks!!$"
+
+Route114_EventScript_Croagunk::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CROAGUNK, CRY_MODE_NORMAL
+	msgbox Route114_Croagunk, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route114_Croagunk:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Croagunk: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Croehehehunk...$"
+
+
+
+
+
+
+
+

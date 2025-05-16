@@ -313,3 +313,71 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at MT. CHIMNEY?$"
+
+MeteorFalls_EventScript_Bagon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BAGON, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Bagon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Bagon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Bagon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Goooun!$"
+
+MeteorFalls_EventScript_Umbreon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_UMBREON, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Umbreon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Umbreon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Umbreon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Breeow!!$"
+
+MeteorFalls_EventScript_Mamoswine::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MAMOSWINE, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Mamoswine, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Mamoswine:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mamoswine: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Maooommo!!$"
+
+
+MeteorFalls_EventScript_Wimpod::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WIMPOD, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Wimpod, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Wimpod:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wimpod: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}P-p-ppppoOodDo!!!!$"
+
+MeteorFalls_EventScript_Weavile::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WEAVILE, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Weavile, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Weavile:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Weavile: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Weaav!$"
+
+

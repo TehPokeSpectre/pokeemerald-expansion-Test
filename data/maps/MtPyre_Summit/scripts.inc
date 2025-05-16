@@ -623,3 +623,16 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "Then, its duty done, the green POKéMON\n"
 	.string "flew off into the wild blue yonder…$"
 
+MtPyre_Summit_EventScript_Froslass::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FROSLASS, CRY_MODE_NORMAL
+	msgbox MtPyre_Summit_Froslass, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_Summit_Froslass:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Froslass: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Whiiislass...$"
+

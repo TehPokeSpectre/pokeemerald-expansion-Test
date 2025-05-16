@@ -399,3 +399,16 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
+OldaleTown_EventScript_Yamper::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_YAMPER, CRY_MODE_NORMAL
+	msgbox OldaleTown_Yamper, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OldaleTown_Yamper:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Yamper: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Yawarf!$"
+

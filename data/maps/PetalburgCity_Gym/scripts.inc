@@ -1593,3 +1593,16 @@ PetalburgCity_Gym_Text_NormanRematchNeedTwoMons:
 	.string "Sorry, but you'll have to come back\n"
 	.string "with at least two POKéMON.$"
 
+PetalburgCity_EventScript_Slaking::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SLAKING, CRY_MODE_NORMAL
+	msgbox PetalburgCityGym_Slaking, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgCityGym_Slaking:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Slaking: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Slaaaaak.$"
+

@@ -276,6 +276,16 @@ LavaridgeTown_EventScript_HerbShopSign::
 	msgbox LavaridgeTown_Text_HerbShopSign, MSGBOX_SIGN
 	end
 
+Lavaridge_EventScript_Absol::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ABSOL, CRY_MODE_NORMAL
+	msgbox Lavaridge_Absol, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 LavaridgeTown_Text_MayNiceBadgesTakeThis:
 	.string "MAY: {PLAYER}{KUN}! Long time no see!\p"
 	.string "Oh? While I visited the hot springs,\n"
@@ -406,4 +416,24 @@ LavaridgeTown_Text_GymSign:
 LavaridgeTown_Text_HerbShopSign:
 	.string "POKéMON HERB SHOP\n"
 	.string "“Bitter taste--better cure!”$"
+
+Lavaridge_Absol:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Absol: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Oowhoool!$"
+
+Lavaridge_EventScript_Fuecoco::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FUECOCO, CRY_MODE_NORMAL
+	msgbox Lavaridge_Fuecoco, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Lavaridge_Fuecoco:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Fuecoco: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fuee?\p"
+	.string "You can tell zero thoughts are\n"
+	.string "in the head of this Pokemon...$"
+
+
 

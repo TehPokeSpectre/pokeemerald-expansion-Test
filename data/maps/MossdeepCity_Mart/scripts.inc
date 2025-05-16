@@ -56,3 +56,16 @@ MossdeepCity_Mart_Text_NetAndDiveBallsRare:
 	.string "A DIVE BALL works best on POKéMON\n"
 	.string "at the bottom of the sea.$"
 
+MossdeepMart_EventScript_Meowstic::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MEOWSTIC_F, CRY_MODE_NORMAL
+	msgbox MossdeepMart_Meowstic, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepMart_Meowstic:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Meowstic: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Mewooew!$"
+

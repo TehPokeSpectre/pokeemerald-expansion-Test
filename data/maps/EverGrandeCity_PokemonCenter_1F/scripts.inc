@@ -100,3 +100,30 @@ EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
 	.string "Okay, {PLAYER}{KUN}.\n"
 	.string "Go for greatness!$"
 
+LeagueCenter_EventScript_Chansey::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHANSEY, CRY_MODE_NORMAL
+	msgbox LeagueCenter_Chansey, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LeagueCenter_Chansey:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Chansey: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Chhiiansee!$"
+
+LeagueCenter_EventScript_Scorbunny::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SCORBUNNY, CRY_MODE_NORMAL
+	msgbox LeagueCenter_Scorbunny, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LeagueCenter_Scorbunny:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Scorbunny: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Scor!$"
+
+

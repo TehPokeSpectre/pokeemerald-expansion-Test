@@ -82,3 +82,16 @@ EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "will carry you.\p"
 	.string "Go ahead, move on to the next room.$"
 
+PhoebeRoom_EventScript_Dusknoir::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DUSKNOIR, CRY_MODE_NORMAL
+	msgbox PhoebeRoom_Dusknoir, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PhoebeRoom_Dusknoir:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dusknoir: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Dukksssoir!$"
+

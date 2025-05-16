@@ -759,3 +759,57 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 	.string "I mean, we are totally happy!$"
 
+Lilycove_EventScript_FurfrouHeart::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FURFROU, CRY_MODE_NORMAL
+	msgbox Lilycove_FurfrouHeart, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Lilycove_FurfrouHeart:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Furfrou: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Raafro!$"
+
+Lilycove_EventScript_FurfrouPharaoh::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FURFROU, CRY_MODE_NORMAL
+	msgbox Lilycove_FurfrouPharaoh, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Lilycove_FurfrouPharaoh:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Furfrou: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Wooffrou?$"
+
+Lilycove_EventScript_Wattrel::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WATTREL, CRY_MODE_NORMAL
+	msgbox Lilycove_Wattrel, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Lilycove_Wattrel:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wattrel: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Treelilia!$"
+
+Lilycove_EventScript_Aromatisse::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_AROMATISSE, CRY_MODE_NORMAL
+	msgbox Lilycove_Aromatisse, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Lilycove_Aromatisse:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Aromatisse: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tresssi!$"
+
+
+

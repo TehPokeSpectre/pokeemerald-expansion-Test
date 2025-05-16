@@ -70,3 +70,16 @@ LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
 	.string "I gave a CARBOS to my POKéMON,\n"
 	.string "and its SPEED went up.$"
 
+LilycoveDept3_EventScript_Lopunny::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LOPUNNY, CRY_MODE_NORMAL
+	msgbox LilycoveDept3_Lopunny, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveDept3_Lopunny:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Lopunny: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Louuupii!$"
+

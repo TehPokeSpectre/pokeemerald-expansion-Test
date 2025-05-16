@@ -419,3 +419,16 @@ MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
 	.string "Come see me with two or more\n"
 	.string "POKéMON, all right?$"
 
+Mauville_EventScript_Manectric::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MANECTRIC, CRY_MODE_NORMAL
+	msgbox Mauville_Manectric, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mauville_Manectric:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Manectric: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Grrrr! RAFF!$"
+

@@ -48,3 +48,15 @@ LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
 	.string "If POKéMON are getting rest, so too\n"
 	.string "should their TRAINERS.$"
 
+LavaridgeTown_EventScript_Sinistcha::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SINISTCHA, CRY_MODE_NORMAL
+	msgbox LavaridgeTown_PokemonCenter_Sinistcha, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LavaridgeTown_PokemonCenter_Sinistcha:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Sinistcha: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Istcha!$"

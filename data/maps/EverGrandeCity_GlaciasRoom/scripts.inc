@@ -81,3 +81,16 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "And there, confirm the truly fearsome\n"
 	.string "side of the POKéMON LEAGUE.$"
 
+GlaciaRoom_EventScript_Walrein::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WALREIN, CRY_MODE_NORMAL
+	msgbox GlaciaRoom_Walrein, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+GlaciaRoom_Walrein:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Walrein: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Ggaawaren!$"
+

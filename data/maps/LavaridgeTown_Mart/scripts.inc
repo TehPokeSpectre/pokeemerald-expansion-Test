@@ -43,3 +43,16 @@ LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney:
 	.string "specialty that you can buy only there.\p"
 	.string "Give it to a POKéMON--it will be elated.$"
 
+LavaridgeMart_EventScript_Kecleon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KECLEON, CRY_MODE_NORMAL
+	msgbox LavaridgeMart_Kecleon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LavaridgeMart_Kecleon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kecleon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kekek!$"
+

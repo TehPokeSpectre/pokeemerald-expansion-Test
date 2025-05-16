@@ -1170,3 +1170,84 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
+
+Route104_EventScript_Wiglett::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WIGLETT, CRY_MODE_NORMAL
+	msgbox Route104_Wiglett, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_EventScript_Wattrel::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WATTREL, CRY_MODE_NORMAL
+	msgbox Route104_Wattrel, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_EventScript_Kilowattrel::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KILOWATTREL, CRY_MODE_NORMAL
+	msgbox Route104_Kilowattrel, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_Wiglett:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wiglett: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Wig?$"
+
+Route104_Wattrel:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wattrel: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Brrid?$"
+
+Route104_Kilowattrel:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wattrel: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kii! Brrid?$"
+
+Route104_EventScript_Quaxly::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_QUAXLY, CRY_MODE_NORMAL
+	msgbox Route104_Quaxly, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_Quaxly:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Quaxly: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Quax Quax?$"
+
+Route104_EventScript_Budew::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BUDEW, CRY_MODE_NORMAL
+	msgbox Route104_Budew, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_Budew:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Budew: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Buuue!$"
+
+Route104_EventScript_Elekid::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ELEKID, CRY_MODE_NORMAL
+	msgbox Route104_Elekid, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_Elekid:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Elekid: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Elek!$"
+
+
+

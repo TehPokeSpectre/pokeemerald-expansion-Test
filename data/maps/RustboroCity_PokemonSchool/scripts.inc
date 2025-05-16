@@ -349,3 +349,33 @@ RustboroCity_PokemonSchool_Text_ScottMetAlreadyStoneBadge:
 	.string "It's hard to tell what you're like as\n"
 	.string "a TRAINER from a LEAGUE BADGE.$"
 
+Trainerschool_EventScript_Munchlax::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MUNCHLAX, CRY_MODE_NORMAL
+	msgbox Trainerschool_Munchlax, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Trainerschool_Munchlax:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Munchlax: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Laax...\p"
+	.string "It's stomach started rumbling.$"
+
+Trainerschool_EventScript_Sobble::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SOBBLE, CRY_MODE_NORMAL
+	msgbox Trainerschool_Sobble, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Trainerschool_Sobble:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Sobble: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}S-s-sob... WAHHHHH!!!$"
+
+
+
+

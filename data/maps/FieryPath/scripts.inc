@@ -12,3 +12,42 @@ FieryPath_EventScript_MoveScottToFallarbor::
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 	return
 
+Fierypath_EventScript_Torkoal::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TORKOAL, CRY_MODE_NORMAL
+	msgbox Fierypath_Torkoal, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fierypath_EventScript_Koffing::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KOFFING, CRY_MODE_NORMAL
+	msgbox Fierypath_Koffing, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fierypath_EventScript_Carkol::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CARKOL, CRY_MODE_NORMAL
+	msgbox Fierypath_Carkol, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fierypath_Torkoal:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Torkoal: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Koaal?$"
+
+Fierypath_Koffing:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Koffing: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Koff...$"
+
+Fierypath_Carkol:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Carkol: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Nyooom!$"
+

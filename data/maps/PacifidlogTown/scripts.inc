@@ -52,3 +52,29 @@ PacifidlogTown_Text_TownSign:
 	.string "“Where the morning sun smiles upon\n"
 	.string "the waters.”$"
 
+Pacifidlog_EventScript_Espeon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ESPEON, CRY_MODE_NORMAL
+	msgbox Pacifidlog_Espeon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Pacifidlog_Espeon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Espeon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Esppeow!$"
+
+Pacifidlog_EventScript_Wailord::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WAILORD, CRY_MODE_NORMAL
+	msgbox Pacifidlog_Wailord, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Pacifidlog_Wailord:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wailord: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}WAAAAILL!!!$"
+

@@ -97,3 +97,16 @@ MtPyre_3F_Text_GabriellePostRematch:
 	.string "They are all to be equally cherished.\n"
 	.string "I see that you've remembered that.$"
 
+MtPyre_3F_EventScript_Lampent::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LAMPENT, CRY_MODE_NORMAL
+	msgbox MtPyre_3F_Lampent, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_3F_Lampent:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Lampent: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Peiiint.$"
+

@@ -181,3 +181,17 @@ MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons:
 	.string "If you'd care to battle with us, you'll\n"
 	.string "have to come back with more POKéMON.$"
 
+MeteorFalls_EventScript_Regidrago::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_REGIDRAGO, CRY_MODE_NORMAL
+	msgbox MeteorFalls_Regidrago, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MeteorFalls_Regidrago:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Regidrago: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}RAAAWRRROGO!$"
+
+

@@ -107,3 +107,30 @@ Route102_Text_RouteSignOldale:
 Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+Route102_EventScript_Rookidee::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ROOKIDEE, CRY_MODE_NORMAL
+	msgbox Route102_Rookidee, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route102_Rookidee:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Rookidee: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Rok-Roke-dee!$"
+
+Route102_EventScript_Bidoof::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BIDOOF, CRY_MODE_NORMAL
+	msgbox Route102_Bidoof, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route102_Bidoof:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Bidoof: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}D'oof!$"
+

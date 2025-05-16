@@ -317,3 +317,16 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, POKéMON, please.$"
 
+SootopolisGym_EventScript_Kingdra::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KINGDRA, CRY_MODE_NORMAL
+	msgbox SootopolisGym_Kingdra, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisGym_Kingdra:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kingdra: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Gyiidra!$"
+

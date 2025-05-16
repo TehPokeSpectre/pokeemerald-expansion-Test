@@ -801,3 +801,33 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+Dewford_EventScript_Vaporeon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VAPOREON, CRY_MODE_NORMAL
+	msgbox Dewford_Vaporeon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Dewford_EventScript_Clobbopus::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLOBBOPUS, CRY_MODE_NORMAL
+	msgbox Dewford_Clobbopus, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+
+Dewford_Vaporeon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Vaporeon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vapppeow!$"
+
+Dewford_Clobbopus:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Clobbopus: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Clob-Clob...$"
+
+
+

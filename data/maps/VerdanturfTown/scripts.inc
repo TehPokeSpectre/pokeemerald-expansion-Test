@@ -125,3 +125,29 @@ VerdanturfTown_Text_RusturfTunnelSign:
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
 
+Verdanturf_EventScript_WeezingG::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WEEZING, CRY_MODE_NORMAL
+	msgbox Verdanturf_WeezingG, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Verdanturf_WeezingG:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Weezing: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Wwwwheeeez...$"
+
+Verdanturf_EventScript_Fennekin::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FENNEKIN, CRY_MODE_NORMAL
+	msgbox Verdanturf_Fennekin, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Verdanturf_Fennekin:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Fennekin: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Feen?$"
+

@@ -161,3 +161,17 @@ LilycoveCity_DepartmentStore_5F_Text_SellManyCuteMatsHere:
 LilycoveCity_DepartmentStore_5F_Text_ClosedRooftopForWeather:
 	.string "I think they closed the rooftop\n"
 	.string "because the weather is wild today.$"
+
+LilycoveDept5_EventScript_Hawlucha::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HAWLUCHA, CRY_MODE_NORMAL
+	msgbox LilycoveDept5_Hawlucha, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveDept5_Hawlucha:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Hawlucha: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Lauuuchaaw!$"
+

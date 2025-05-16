@@ -91,7 +91,7 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
-	giveitem ITEM_GREAT_BALL
+	giveitem ITEM_EXP_SHARE
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
 	goto PetalburgWoods_EventScript_DevonResearcherFinish
 	end
@@ -367,7 +367,7 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
+	.string "I know, I'll give you this as\n"
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
@@ -473,4 +473,85 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "make moves during battle.\p"
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
+
+PetalburgWoods_EventScript_Morelull::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MORELULL, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Morelull, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_EventScript_Mankey::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MANKEY, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Mankey, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_EventScript_Tarountula::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TAROUNTULA, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Tarountula, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_Morelull:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Morelull: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Murl-lilil.$"
+
+PetalburgWoods_Mankey:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mankey: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Oiink.$"
+
+PetalburgWoods_Tarountula:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Tarountula: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tututal!$"
+
+PetalburgWoods_EventScript_Phantump::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PHANTUMP, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Phantump, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_Phantump:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Phantump: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tummmmppp...$"
+
+PetalburgWoods_EventScript_Pumpkaboo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PUMPKABOO, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Pumpkaboo, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_Pumpkaboo:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pumpkaboo: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}BoOoOooOOo... PUMP!$"
+
+PetalburgWoods_EventScript_Pineco::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PINECO, CRY_MODE_NORMAL
+	msgbox PetalburgWoods_Pineco, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgWoods_Pineco:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pineco: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pinnne?$"
+
+
+
 

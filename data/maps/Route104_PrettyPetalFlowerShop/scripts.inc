@@ -97,3 +97,17 @@ Route104_PrettyPetalFlowerShop_EventScript_AlreadyReceivedBerry::
 	msgbox Route104_PrettyPetalFlowerShop_Text_MachineMixesBerries, MSGBOX_DEFAULT
 	release
 	end
+
+Route104_EventScript_Chikorita::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHIKORITA, CRY_MODE_NORMAL
+	msgbox Route104_Chikorita, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route104_Chikorita:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Chikorita: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Chikaa!$"
+

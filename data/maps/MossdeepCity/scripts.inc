@@ -433,3 +433,58 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
 
+Mossdeep_EventScript_Clefairy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	msgbox Mossdeep_Clefairy, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mossdeep_Clefairy:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Clefairy: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Cleiiifair!$"
+
+Mossdeep_EventScript_Beheeyem::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BEHEEYEM, CRY_MODE_NORMAL
+	msgbox Mossdeep_Beheeyem, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mossdeep_Beheeyem:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Beheeyem: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Beep, Boop-Behy.$"
+
+Mossdeep_EventScript_Minior::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MINIOR, CRY_MODE_NORMAL
+	msgbox Mossdeep_Minior, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mossdeep_Minior:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Minior: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Oooirmiii!$"
+
+Mossdeep_EventScript_Piplup::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PIPLUP, CRY_MODE_NORMAL
+	msgbox Mossdeep_Piplup, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mossdeep_Piplup:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Piplup: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pipplup!$"
+
+
+
+

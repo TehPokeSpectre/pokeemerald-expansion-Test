@@ -429,3 +429,42 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "We will take the fuel no matter what.\p"
 	.string "“Let there be more land!\n"
 	.string "                                          TEAM MAGMA”$"
+
+MossdeepSpace_EventScript_Clefairy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	msgbox MossdeepSpace_Clefairy, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepSpace_Clefairy:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Clefairy: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Cleiiifair!$"
+
+MossdeepSpace_EventScript_Poipole::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_POIPOLE, CRY_MODE_NORMAL
+	msgbox MossdeepSpace_Poipole, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepSpace_Poipole:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Poipole: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Poiiiipul?$"
+
+MossdeepSpacePoipole_EventScript_Scientist::
+	msgbox MossdeepSpace_Scientist, MSGBOX_NPC
+	end
+
+MossdeepSpace_Scientist:
+    .string "This little guy appeared out of\n"
+	.string "a strange portal...\p"
+	.string "We are currently running our\n"
+	.string "databases to figure out what\l"
+	.string "species of Pokemon this fella is.$"
+
+

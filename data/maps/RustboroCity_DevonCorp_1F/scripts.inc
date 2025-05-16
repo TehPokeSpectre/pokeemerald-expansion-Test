@@ -144,3 +144,16 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "tools for POKéMON TRAINERS, including\l"
 	.string "POKé BALLS and POKéNAV systems.”$"
 
+DevonCorp1_EventScript_Dracovish::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DRACOVISH, CRY_MODE_NORMAL
+	msgbox Devoncorp_Dracovish, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Devoncorp_Dracovish:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dracovish: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Viiiiizh!$"
+

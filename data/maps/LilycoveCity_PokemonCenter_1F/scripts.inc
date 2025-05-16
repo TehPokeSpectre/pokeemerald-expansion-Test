@@ -66,3 +66,16 @@ LilycoveCity_PokemonCenter_1F_Text_HaventSeenRottenScoundrels:
 	.string "POKéMON and rip off METEORITES…\p"
 	.string "I haven't seen them around recently.$"
 
+LilycoveCenter_EventScript_Indeedee::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_INDEEDEE_M, CRY_MODE_NORMAL
+	msgbox LilycoveCenter_IndeedeeM, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveCenter_IndeedeeM:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Indeedee: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Dee.$"
+

@@ -56,3 +56,16 @@ VerdanturfTown_Mart_Text_NestBallOnWeakenedPokemon:
 	.string "VERDANTURF is the only place you can\n"
 	.string "buy it.$"
 
+VerdanturfMart_EventScript_Delcatty::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DELCATTY, CRY_MODE_NORMAL
+	msgbox VerdanturfMart_Delcatty, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerdanturfMart_Delcatty:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Delcatty: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Skkiidelly!$"
+

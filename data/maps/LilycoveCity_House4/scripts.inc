@@ -19,3 +19,16 @@ LilycoveCity_House4_Text_UnderwaterTrenchMossdeepSootopolis:
 	.string "between MOSSDEEP and SOOTOPOLIS.\p"
 	.string "That's what someone told me, anyway.$"
 
+LilycoveCity_EventScript_Litten::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LITTEN, CRY_MODE_NORMAL
+	msgbox LilycoveCity_Litten, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveCity_Litten:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Litten: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Reooow!$"
+

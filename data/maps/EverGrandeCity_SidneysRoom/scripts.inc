@@ -85,3 +85,16 @@ EverGrandeCity_SidneysRoom_Text_PostBattleSpeech:
 	.string "Now, go on to the next room and enjoy\l"
 	.string "your next battle!$"
 
+SidneysRoom_EventScript_Absol::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ABSOL, CRY_MODE_NORMAL
+	msgbox SidneysRoom_Absol, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SidneysRoom_Absol:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Absol: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Solllol!$"
+

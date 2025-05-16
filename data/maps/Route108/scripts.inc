@@ -47,3 +47,42 @@ Route108_EventScript_CoryRematch::
 	msgbox Route108_Text_CoryRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route108_EventScript_Avalugg::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_AVALUGG, CRY_MODE_NORMAL
+	msgbox Route108_Avalugg, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route108_Avalugg:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Avalugg: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Gllaaaalugggg...$"
+
+Route108_EventScript_Lapras::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LAPRAS, CRY_MODE_NORMAL
+	msgbox Route108_Lapras, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route108_Lapras:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Lapras: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Aalaapas...$"
+
+Route108_EventScript_Bergmite::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BERGMITE, CRY_MODE_NORMAL
+	msgbox Route108_Bergmite, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route108_Bergmite:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Bergmite: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Berrrregmi!$"
+

@@ -94,3 +94,16 @@ PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
 	.string "But, it's weak against GRASS-type\n"
 	.string "and ELECTRIC-type POKéMON.$"
 
+PetalburgCenter_EventScript_Audino::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_AUDINO, CRY_MODE_NORMAL
+	msgbox PetalburgCenter_Audino, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgCenter_Audino:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Audino: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Diiiiino!$"
+

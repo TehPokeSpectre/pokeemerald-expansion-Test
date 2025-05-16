@@ -19,7 +19,34 @@
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 24,
+      "y": 44,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MEWTWONITE_X",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_RECEIVED_MEWTWONITEX"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 13,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MEWTWONITE_Y",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_RECEIVED_MEWTWONITEY"
+    }
+  ],
   "warp_events": [
     {
       "x": 18,

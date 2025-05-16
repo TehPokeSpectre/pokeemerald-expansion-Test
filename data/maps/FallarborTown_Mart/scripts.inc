@@ -17,7 +17,7 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_X_SP_ATK
 	.2byte ITEM_X_SPEED
@@ -55,10 +55,23 @@ FallarborTown_Mart_Text_DecidingSkittyEvolve:
 	.string "But it will look so different, too.$"
 
 FallarborTown_Mart_Text_Skitty:
-	.string "SKITTY: Miyao?$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}SKITTY: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Miyao?$"
 
 FallarborTown_Mart_Text_SellNuggetIFound:
 	.string "This NUGGET I found here…\n"
 	.string "I suppose I'll have to sell it, seeing\l"
 	.string "as how it has no other use.$"
+
+FallarborMart_EventScript_Persian::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PERSIAN, CRY_MODE_NORMAL
+	msgbox FallarborMart_Persian, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FallarborMart_Persian:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Persian: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Perrr-sa!$"
 

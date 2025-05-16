@@ -105,3 +105,16 @@ Route111_WinstrateFamilysHouse_Text_GrandsonStrongShort:
 	.string "Knowing my grandson, he could be the\n"
 	.string "CHAMPION already!$"
 
+Route111_EventScript_Stufful::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
+	msgbox Route111_Stufful, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route111_Stufful:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Stufful: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fuuuullle!$"
+

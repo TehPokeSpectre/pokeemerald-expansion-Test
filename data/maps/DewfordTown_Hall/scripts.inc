@@ -443,3 +443,16 @@ DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
 	.string "“{STR_VAR_1}”\l"
 	.string "are in, too.$"
 
+Dewfordhall_EventScript_Chatot::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHATOT, CRY_MODE_NORMAL
+	msgbox Dewfordhall_Chatot, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Dewfordhall_Chatot:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Chatot: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tottot!$"
+

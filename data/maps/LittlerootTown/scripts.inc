@@ -1019,3 +1019,76 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+Littleroot_EventScript_Pikipek::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PIKIPEK, CRY_MODE_NORMAL
+	msgbox Littleroot_Pikipek, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Littleroot_EventScript_Mudkip::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MUDKIP, CRY_MODE_NORMAL
+	msgbox Littleroot_Mudkip, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Littleroot_EventScript_Floette::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FLOETTE, CRY_MODE_NORMAL
+	msgbox Littleroot_Floette, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Littleroot_Pikipek:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pikipek: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pikiii!$"
+
+Littleroot_Mudkip:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mudkip: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kiip!$"
+
+Littleroot_Floette:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Floette: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fliio! Eet!$"
+
+Littleroot_EventScript_Torchic::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TORCHIC, CRY_MODE_NORMAL
+	msgbox Littleroot_Torchic, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Littleroot_Torchic:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Torchic: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Chhicc?$"
+
+Littleroot_EventScript_Treecko::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TREECKO, CRY_MODE_NORMAL
+	msgbox Littleroot_Treecko, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Littleroot_Treecko:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Treecko: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Gekko!$"
+
+LittlerootSubbitHouse_EventScript_TownSign::
+	msgbox Subbit_Text_TownSign, MSGBOX_SIGN
+	end
+
+Subbit_Text_TownSign:
+.string "Subbit House:\n"
+.string "The Crew behind the Shinylocke!$"
+

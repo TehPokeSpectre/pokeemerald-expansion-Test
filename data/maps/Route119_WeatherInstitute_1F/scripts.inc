@@ -133,3 +133,16 @@ Route119_WeatherInstitute_1F_Text_TakeRestInBed:
 	.string "There's a bed…\n"
 	.string "Let's take a rest.$"
 
+Weatherplace_EventScript_Deerling::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DEERLING, CRY_MODE_NORMAL
+	msgbox Weatherplace_Deerling, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Weatherplace_Deerling:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Deerling: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Liiin-ring!$"
+

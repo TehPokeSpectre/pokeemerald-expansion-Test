@@ -25,3 +25,31 @@ MtPyre_Exterior_EventScript_SunTrigger::
 	doweather
 	end
 
+MtPyre_Exterior_EventScript_Runerigus::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_RUNERIGUS, CRY_MODE_NORMAL
+	msgbox MtPyre_Exterior_Runerigus, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_Exterior_Runerigus:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Runerigus: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Rigirigruus!$"
+
+MtPyre_Exterior_EventScript_Annihilape::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ANNIHILAPE, CRY_MODE_NORMAL
+	msgbox MtPyre_Exterior_Annihilape, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_Exterior_Annihilape:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Annihilape: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Arguuuahil...$"
+
+
+

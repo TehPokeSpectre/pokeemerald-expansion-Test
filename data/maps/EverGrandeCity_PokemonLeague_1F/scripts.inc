@@ -139,3 +139,49 @@ EverGrandeCity_PokemonLeague_1F_Text_GoForth:
 	.string "TRAINER! Believe in yourself and your\n"
 	.string "POKéMON, and go forth!$"
 
+Leaguemart_EventScript_Gholdengo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GHOLDENGO, CRY_MODE_NORMAL
+	msgbox Leaguemart_Gholdengo, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Leaguemart_Gholdengo:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Gholdengo: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Ghoulden!$"
+
+League_EventScript_Vicitini::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VICTINI, CRY_MODE_NORMAL
+	msgbox League_Vicitini, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+League_Vicitini:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Victini: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tiinivii.$"
+
+League_EventScript_Zeraora::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ZERAORA, CRY_MODE_NORMAL
+	msgbox Leaguemart_Zeraora, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Leaguemart_Zeraora:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Zeraora: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Zeeraah!$"
+
+League_EventScript_Man::
+	msgbox Zeraora_trainer, MSGBOX_NPC
+	end
+
+Zeraora_trainer:
+.string "We're ready for the Elite Four!$"
+

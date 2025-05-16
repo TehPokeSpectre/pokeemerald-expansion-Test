@@ -183,3 +183,16 @@ LilycoveCity_DepartmentStore_1F_Text_SpreadWordAboutWirelessComm:
 	.string "I want to spread the word about how\n"
 	.string "fun Wireless Communication can be.$"
 
+LilycoveDept1_EventScript_Dewgong::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DEWGONG, CRY_MODE_NORMAL
+	msgbox LilycoveDept1_Dewgong, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveDept1_Dewgong:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dewgong: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Dewwoong!$"
+

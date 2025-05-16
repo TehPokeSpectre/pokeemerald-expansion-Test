@@ -214,7 +214,12 @@
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
 #define MAPSEC_TRAINER_HILL                 0xD4
-#define MAPSEC_NONE                         0xD5
+#define MAPSEC_GLIMBURG_THICKET             0xD5
+#define MAPSEC_RUSTBORO_FARMS               0xD6
+#define MAPSEC_VERDENTURF_FIELDS            0xD7
+#define MAPSEC_SLOWPOKE_ISLE                0xD8
+#define MAPSEC_INNER_GRANITE_CAVE           0xD9
+#define MAPSEC_NONE                         0xDA
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

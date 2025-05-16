@@ -1725,3 +1725,70 @@ SootopolisCity_Text_DazzledByMentor:
 	.string "WALLACE: I'm sure that you will be\n"
 	.string "dazzled by my mentor's breathtakingly\l"
 	.string "elegant battle style.$"
+
+SootopolisCity_EventScript_Palafin_Hero::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PALAFIN_HERO, CRY_MODE_NORMAL
+	msgbox SootopolisCity_Palafin_Hero, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCity_Palafin_Hero:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Palafin: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}PALEERO!$"
+
+SootopolisCity_EventScript_Dreepy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DREEPY, CRY_MODE_NORMAL
+	msgbox SootopolisCity_Dreepy, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCity_Dreepy:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dreepy: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Dreoooospppi...$"
+
+SootopolisCity_EventScript_Glimmet::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GLIMMET, CRY_MODE_NORMAL
+	msgbox SootopolisCity_Glimmet, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCity_Glimmet:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Glimmet: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Glimil?$"
+
+SootopolisCity_EventScript_Finizen::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FINIZEN, CRY_MODE_NORMAL
+	msgbox SootopolisCity_Finizen, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCity_Finizen:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Finizen: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fiiiinzi!$"
+
+SootopolisCity_EventScript_Turtwig::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TURTWIG, CRY_MODE_NORMAL
+	msgbox SootopolisCity_Turtwig, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCity_Turtwig:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Turtwig: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Turt...$"
+
+

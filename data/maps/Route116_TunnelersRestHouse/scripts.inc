@@ -60,3 +60,16 @@ Route116_TunnelersRestHouse_Text_TunnelHasGoneThrough:
 	.string "Sometimes, if you hope strongly enough,\n"
 	.string "dreams do come true.$"
 
+Route116_EventScript_Tepig::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TEPIG, CRY_MODE_NORMAL
+	msgbox Route116_Tepig, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route116_Tepig:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Tepig: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Piig.$"
+

@@ -549,7 +549,7 @@ Route109_Text_ZigzagoonPicksUpLitter:
 	.string "back to haunt us eventually.$"
 
 Route109_Text_ZigzagoonCry:
-	.string "ZIGZAGOON: Guguu?$"
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Zigzagoon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Guguu?$"
 
 Route109_Text_SeashoreHouseSign:
 	.string "SEASHORE HOUSE\p"
@@ -562,3 +562,71 @@ Route109_Text_TrainerTipsSign:
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+
+Route109_EventScript_Pyukumuku1::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PYUKUMUKU, CRY_MODE_NORMAL
+	msgbox Route109_Pyukumuku1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route109_EventScript_Pyukumuku2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PYUKUMUKU, CRY_MODE_NORMAL
+	msgbox Route109_Pyukumuku2, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route109_EventScript_Krabby::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KRABBY, CRY_MODE_NORMAL
+	msgbox Route109_Krabby, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route109_EventScript_Sandygast::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SANDYGAST, CRY_MODE_NORMAL
+	msgbox Route109_Sandygast, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route109_Pyukumuku1:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pyukumuku: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Yuku?$"
+
+Route109_Pyukumuku2:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pyukumuku: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pyu... Mukukuku?$"
+
+Route109_Krabby:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Krabby: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Biii! Kraa!$"
+
+Route109_Sandygast:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Sandygast: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY} Wooosh... Gaast...$"
+
+Route109_EventScript_Popplio::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_POPPLIO, CRY_MODE_NORMAL
+	msgbox Route109_Popplio, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route109_Popplio:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Popplio: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Popopoiop?$"
+
+
+

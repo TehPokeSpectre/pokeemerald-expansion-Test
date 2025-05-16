@@ -54,3 +54,16 @@ MauvilleCity_PokemonCenter_1F_Text_RecordCornerSoundsFun:
 	.string "I don't know what it's about, but it\n"
 	.string "sounds fun. I'll go check it out!$"
 
+MauvilleCenter_EventScript_Pawmot::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PAWMOT, CRY_MODE_NORMAL
+	msgbox MauvilleCenter_Pawmot, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MauvilleCenter_Pawmot:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pawmot: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Piimot?$"
+

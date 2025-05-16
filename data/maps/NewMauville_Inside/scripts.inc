@@ -261,3 +261,56 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 	.string "… … … … … … … …\p"
 	.string "The generator appears to have\n"
 	.string "stopped…$"
+
+NewMauville_EventScript_Meltan1::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MELTAN, CRY_MODE_NORMAL
+	msgbox NewMauville_Meltan1, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+NewMauville_Meltan1:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Meltan: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Meetaan!$"
+
+NewMauville_EventScript_Meltan2::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MELTAN, CRY_MODE_NORMAL
+	msgbox NewMauville_Meltan2, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+NewMauville_Meltan2:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Meltan: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Taaain?$"
+
+NewMauville_EventScript_Voltorb::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VOLTORB, CRY_MODE_NORMAL
+	msgbox NewMauville_Voltorb, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+NewMauville_Voltorb:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Voltorb: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vooolt!$"
+
+NewMauville_EventScript_Jolteon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_JOLTEON, CRY_MODE_NORMAL
+	msgbox NewMauville_Jolteon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+NewMauville_Jolteon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Joltoen: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Jolteow!$"
+

@@ -765,3 +765,30 @@ PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land in search of\n"
 	.string "talented TRAINERS.\p"
 	.string "I'm sorry to have taken your time.$"
+
+Petalburg_EventScript_Ducklett::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DUCKLETT, CRY_MODE_NORMAL
+	msgbox PetalburgCity_Ducklett, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Petalburg_EventScript_Eevee::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_EEVEE, CRY_MODE_NORMAL
+	msgbox PetalburgCity_Eevee, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgCity_Ducklett:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Ducklett: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Quack?$"
+
+PetalburgCity_Eevee:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Eevee: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vi! Vii! VIII!!!$"
+

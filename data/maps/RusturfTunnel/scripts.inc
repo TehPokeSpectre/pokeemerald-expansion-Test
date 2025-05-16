@@ -531,3 +531,16 @@ RusturfTunnel_Text_MikePostBattle:
 	.string "protect POKéMON, right?\l"
 	.string "There's a feel-good story!$"
 
+Rusturf_EventScript_Whismur::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WHISMUR, CRY_MODE_NORMAL
+	msgbox Rusturf_Whismur, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Rusturf_Whismur:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Whismur: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Murahar?$"
+

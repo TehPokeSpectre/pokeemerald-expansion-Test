@@ -93,3 +93,16 @@ FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
 	.string "“New moves taught to POKéMON.”$"
 
+Fallarbor_EventScript_Flareon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FLAREON, CRY_MODE_NORMAL
+	msgbox Fallarbor_Flareon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fallarbor_Flareon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Flareon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Flaareow!$"
+

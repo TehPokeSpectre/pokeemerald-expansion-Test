@@ -666,3 +666,29 @@ MauvilleCity_Text_ExplainTV:
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
+
+Mauville_EventScript_Cyclizar::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CYCLIZAR, CRY_MODE_NORMAL
+	msgbox Mauville_Cyclizar, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mauville_EventScript_PZ::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PORYGON_Z, CRY_MODE_NORMAL
+	msgbox Mauville_PorygonZ, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Mauville_Cyclizar:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Cyclizar: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Rahhn?$"
+
+Mauville_PorygonZ:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Porygon-Z: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Btz-Btz-Btttzz!$"

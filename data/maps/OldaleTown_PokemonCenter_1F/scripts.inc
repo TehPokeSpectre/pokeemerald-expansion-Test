@@ -62,3 +62,16 @@ OldaleTown_PokemonCenter_1F_Text_TradedInWirelessClub:
 	.string "the second floor was built recently.\p"
 	.string "I traded POKéMON right away.$"
 
+OldaleCenter_EventScript_Happiny::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HAPPINY, CRY_MODE_NORMAL
+	msgbox OldaleCenter_Happiny, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OldaleCenter_Happiny:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Happiny: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hap! Hap! Haaapii!$"
+

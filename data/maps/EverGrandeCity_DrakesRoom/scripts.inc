@@ -90,3 +90,16 @@ EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
 	.string "Go! Go onwards!\n"
 	.string "The CHAMPION is waiting!$"
 
+DrakeRoom_EventScript_Salamence::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SALAMENCE, CRY_MODE_NORMAL
+	msgbox DrakeRoom_Salamence, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+DrakeRoom_Salamence:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Salamence: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}GWAAARAAR!$"
+

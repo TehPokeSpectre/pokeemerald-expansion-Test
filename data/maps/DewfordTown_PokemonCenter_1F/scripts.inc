@@ -37,3 +37,16 @@ DewfordTown_PokemonCenter_1F_Text_FaintedMonCanUseHM:
 	.string "battle, it can still use a move learned\l"
 	.string "from a HIDDEN MACHINE (HM).$"
 
+DewfordCenter_EventScript_Mienfoo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MIENFOO, CRY_MODE_NORMAL
+	msgbox DewfordCenter_Mienfoo, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+DewfordCenter_Mienfoo:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mienfoo: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fooooi!$"
+

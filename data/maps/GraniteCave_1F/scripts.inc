@@ -37,3 +37,16 @@ GraniteCave_1F_Text_ExplainFlash:
 	.string "But, to use it, you need the GYM BADGE\n"
 	.string "from DEWFORD's POKéMON GYM.$"
 
+Granite_EventScript_Mawile::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MAWILE, CRY_MODE_NORMAL
+	msgbox Granite_Mawile, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Granite_Mawile:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mawile: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Maaaw!$"
+

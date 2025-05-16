@@ -84,3 +84,17 @@ AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
 AbandonedShip_Text_TheDoorIsOpen:
 	.string "The door is open.$"
 
+AbandonedShip_EventScript_Gimmighoul::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GIMMIGHOUL, CRY_MODE_NORMAL
+	msgbox AbandonedShip_Gimmighoul, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+AbandonedShip_Gimmighoul:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Gimmighoul: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Ciionoul?$"
+
+

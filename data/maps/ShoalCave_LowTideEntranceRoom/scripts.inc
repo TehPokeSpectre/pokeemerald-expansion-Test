@@ -89,3 +89,31 @@ ShoalCave_LowTideEntranceRoom_EventScript_ResetShoalItems::
 	clearflag FLAG_RECEIVED_SHOAL_SHELL_4
 	clearflag FLAG_SYS_SHOAL_ITEM
 	return
+
+
+Shoalcavelow_EventScript_Spheal::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+	msgbox Shoalcavelow_Spheal, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Shoalcavelow_Spheal:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Spheal: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Phheaal!$"
+
+Shoalcavelow_EventScript_Shellder::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SHELLDER, CRY_MODE_NORMAL
+	msgbox Shoalcavelow_Shellder, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Shoalcavelow_Shellder:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Shellder: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Shellll...$"
+

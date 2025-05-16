@@ -143,3 +143,16 @@ Route112_Text_RouteSignLavaridge:
 	.string "ROUTE 112\n"
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
 
+Route112_EventScript_Helioptile::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HELIOPTILE, CRY_MODE_NORMAL
+	msgbox Route112_Helioptile, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route112_Helioptile:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Helioptile: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Heiopopiop!$"
+

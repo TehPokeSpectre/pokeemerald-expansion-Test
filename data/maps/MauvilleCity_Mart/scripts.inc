@@ -49,3 +49,16 @@ MauvilleCity_Mart_Text_DecisionsDetermineBattle:
 	.string "The TRAINER's decisions determine how\n"
 	.string "battles turn out, I think.$"
 
+MauvilleMart_EventScript_Liepard::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LIEPARD, CRY_MODE_NORMAL
+	msgbox MauvilleMart_Liepard, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MauvilleMart_Liepard:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Liepard: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Liiiiipe?$"
+

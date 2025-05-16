@@ -164,3 +164,56 @@ Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
+Route113_EventScript_SneaselH::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SNEASEL, CRY_MODE_NORMAL
+	msgbox Route113_Sneasel, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route113_EventScript_Spinda::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SPINDA, CRY_MODE_NORMAL
+	msgbox Route113_Spinda, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route113_Sneasel:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Sneasel: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Snellzel!$"
+
+Route113_Spinda:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Spinda: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Spi-Spi-Spin!$"
+
+Route113_EventScript_Klefki::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KLEFKI, CRY_MODE_NORMAL
+	msgbox Route113_Klefki, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route113_Klefki:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Klefki: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kling ke!$"
+
+Route113_EventScript_Magby::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MAGBY, CRY_MODE_NORMAL
+	msgbox Route113_Magby, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route113_Magby:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Magby: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Maaag!$"
+
+

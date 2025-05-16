@@ -55,3 +55,16 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "It's really nifty! Those DEVON guys\n"
 	.string "sure know what they're doing!$"
 
+FortreeCenter_EventScript_Comfey::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_COMFEY, CRY_MODE_NORMAL
+	msgbox FortreeCenter_Comfey, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeCenter_Comfey:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Comfey: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Faeee!$"
+

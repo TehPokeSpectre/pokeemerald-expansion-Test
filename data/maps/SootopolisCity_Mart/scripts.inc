@@ -73,3 +73,16 @@ SootopolisCity_Mart_Text_DidSomethingAwaken:
 	.string "This weather…\n"
 	.string "Did something awaken?$"
 
+SootopolisMart_EventScript_Nidoking::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NIDOKING, CRY_MODE_NORMAL
+	msgbox SootopolisMart_Nidoking, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisMart_Nidoking:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Nidoking: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Nidoook!$"
+

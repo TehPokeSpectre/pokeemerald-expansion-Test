@@ -501,3 +501,17 @@ MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "after this.\p"
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
 	.string "I live right here on this island.$"
+
+MossdeepSpace_EventScript_Elgyem::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ELGYEM, CRY_MODE_NORMAL
+	msgbox MossdeepSpace_Elgyem, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepSpace_Elgyem:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Elgyem: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Beep-Beep...Yem!$"
+

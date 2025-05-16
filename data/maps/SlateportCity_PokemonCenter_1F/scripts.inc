@@ -40,3 +40,16 @@ SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
 	.string "If a traded POKéMON is holding an\n"
 	.string "item, it makes me twice as happy!$"
 
+SlateportCenter_EventScript_Alomomola::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ALOMOMOLA, CRY_MODE_NORMAL
+	msgbox SlateportCenter_Alomomola, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SlateportCenter_Alomomola:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Alomomola: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Amola!$"
+

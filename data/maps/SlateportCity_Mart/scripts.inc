@@ -19,7 +19,7 @@ SlateportCity_Mart_Pokemart:
 	.2byte ITEM_SUPER_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_REPEL
 	.2byte ITEM_HARBOR_MAIL
 	pokemartlistend
@@ -43,4 +43,17 @@ SlateportCity_Mart_Text_GreatBallIsBetter:
 	.string "at catching POKéMON.\p"
 	.string "With this, I should be able to get that\n"
 	.string "elusive POKéMON…$"
+
+Slateportmart_EventScript_Psyduck::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	msgbox Slateportmart_Psyduck, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Slateportmart_Psyduck:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Psyduck: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pssyyu.$"
 

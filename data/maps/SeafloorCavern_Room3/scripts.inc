@@ -56,3 +56,16 @@ SeafloorCavern_Room3_Text_Grunt5PostBattle:
 	.string "Maybe…\n"
 	.string "You must be something…$"
 
+SeafloorCavern_EventScript_Crobat::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CROBAT, CRY_MODE_NORMAL
+	msgbox SeafloorCavern_Crobat, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SeafloorCavern_Crobat:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Crobat: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Eskekecrob!!$"
+

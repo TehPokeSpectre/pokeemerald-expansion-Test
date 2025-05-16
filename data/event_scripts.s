@@ -1154,3 +1154,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
 	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/Glimburg_Thicket/scripts.inc"
+
+	.include "data/maps/Glimburg_Manor/scripts.inc"
+
+	.include "data/maps/Rustboro_Farms/scripts.inc"
+
+	.include "data/maps/Farmhouse/scripts.inc"
+
+	.include "data/maps/VerdanturfFields/scripts.inc"
+
+	.include "data/maps/SlowpokeChannel/scripts.inc"
+
+	.include "data/maps/SlowpokeIsle/scripts.inc"
+
+	.include "data/maps/InnerGraniteCave/scripts.inc"

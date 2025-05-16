@@ -148,12 +148,16 @@ SlateportCity_EventScript_EnergyGuru::
 
 	.align 2
 SlateportCity_Pokemart_EnergyGuru:
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_IRON
-	.2byte ITEM_CARBOS
-	.2byte ITEM_ZINC
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_HP_UP
+	.2byte ITEM_FIRE_STONE
+	.2byte ITEM_WATER_STONE
+	.2byte ITEM_THUNDER_STONE
+	.2byte ITEM_LEAF_STONE
+	.2byte ITEM_SUN_STONE
+	.2byte ITEM_MOON_STONE
+	.2byte ITEM_SHINY_STONE
+	.2byte ITEM_DUSK_STONE
+	.2byte ITEM_DAWN_STONE
+	.2byte ITEM_ICE_STONE
 	pokemartlistend
 
 SlateportCity_EventScript_EffortRibbonWoman::
@@ -502,16 +506,29 @@ SlateportCity_EventScript_DollClerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemartdecoration SlateportCity_PokemartDecor_Dolls
+	pokemart SlateportCity_PokemartDecor_Dolls
 	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
 	.align 2
 SlateportCity_PokemartDecor_Dolls:
-	.2byte DECOR_AZURILL_DOLL
-	.2byte DECOR_MARILL_DOLL
-	.2byte DECOR_SKITTY_DOLL
+	.2byte ITEM_CRACKED_POT
+    .2byte ITEM_UNREMARKABLE_TEACUP
+    .2byte ITEM_SWEET_APPLE
+	.2byte ITEM_SYRUPY_APPLE
+    .2byte ITEM_TART_APPLE
+	.2byte ITEM_GALARICA_CUFF
+	.2byte ITEM_GALARICA_WREATH
+    .2byte ITEM_AUSPICIOUS_ARMOR
+	.2byte ITEM_MALICIOUS_ARMOR
+	.2byte ITEM_METAL_ALLOY
+	.2byte ITEM_BLACK_AUGURITE
+	.2byte ITEM_PEAT_BLOCK
+	.2byte ITEM_CHIPPED_POT
+	.2byte ITEM_MASTERPIECE_TEACUP
+	.2byte ITEM_SCROLL_OF_DARKNESS
+    .2byte ITEM_SCROLL_OF_WATERS
 	pokemartlistend
 
 SlateportCity_EventScript_ComeBackWithSecretPower::
@@ -1375,3 +1392,117 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+	Slateport_EventScript_Dhelmise::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DHELMISE, CRY_MODE_NORMAL
+	msgbox Slateport_Dhelmise, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Slateport_EventScript_Ampharos::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_AMPHAROS, CRY_MODE_NORMAL
+	msgbox Slateport_Ampharos, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Slateport_Dhelmise:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dhelmise: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Miiiisse...$"
+
+Slateport_Ampharos:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Ampharos: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Mmmaaaaph!!!$"
+
+SlateportCity_EventScript_Megastone::
+    lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart SlateportCity_PokemartMegaStone
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_PokemartMegaStone:
+	.2byte ITEM_BLASTOISINITE
+	.2byte ITEM_SCEPTILITE
+	.2byte ITEM_VENUSAURITE
+	.2byte ITEM_SWAMPERTITE
+	.2byte ITEM_CHARIZARDITE_X
+	.2byte ITEM_CHARIZARDITE_Y
+	.2byte ITEM_BLAZIKENITE
+	pokemartlistend
+
+SlateportCity_EventScript_AlcremieItems::
+    lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart SlateportCity_AlcremieItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_AlcremieItems:
+	.2byte ITEM_STRAWBERRY_SWEET
+	.2byte ITEM_LOVE_SWEET
+	.2byte ITEM_BERRY_SWEET
+	.2byte ITEM_CLOVER_SWEET
+	.2byte ITEM_FLOWER_SWEET
+	.2byte ITEM_STAR_SWEET
+	.2byte ITEM_RIBBON_SWEET
+	pokemartlistend
+
+SlateportCity_EventScript_OtherEvoItems::
+    lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart SlateportCity_OtherEvoItems
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_OtherEvoItems:
+	.2byte ITEM_DEEP_SEA_TOOTH
+	.2byte ITEM_DEEP_SEA_SCALE
+	.2byte ITEM_OVAL_STONE
+	.2byte ITEM_METAL_COAT
+	.2byte ITEM_PRISM_SCALE
+	.2byte ITEM_DRAGON_SCALE
+	.2byte ITEM_DUBIOUS_DISC
+	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_PROTECTOR
+	.2byte ITEM_REAPER_CLOTH
+	.2byte ITEM_SACHET
+	.2byte ITEM_UPGRADE
+	.2byte ITEM_WHIPPED_DREAM
+	.2byte ITEM_KINGS_ROCK
+	.2byte ITEM_RAZOR_CLAW
+	.2byte ITEM_RAZOR_FANG
+	pokemartlistend
+
+
+Slateport_EventScript_Kricketune::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KRICKETUNE, CRY_MODE_NORMAL
+	msgbox Slateport_Kricketune, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Slateport_Kricketune:
+.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kricketune: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Briiiawoon!$"
+

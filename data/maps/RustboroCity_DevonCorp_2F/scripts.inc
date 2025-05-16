@@ -382,3 +382,17 @@ RustboroCity_DevonCorp_2F_Text_WhatToWorkOnNext:
 	.string "One couldn't ask for a better\n"
 	.string "environment as an engineer.$"
 
+DevonCorp2_EventScript_Kabuto::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KABUTO, CRY_MODE_NORMAL
+	msgbox Devoncorp_Kabuto, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Devoncorp_Kabuto:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kabuto: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Baaot?$"
+
+

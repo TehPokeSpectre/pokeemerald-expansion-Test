@@ -342,3 +342,16 @@ EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
 	.string "{PLAYER}, way to go!\n"
 	.string "Congratulations!$"
 
+WallaceRoom_EventScript_Milotic::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MILOTIC, CRY_MODE_NORMAL
+	msgbox WallaceRoom_Milotic, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+WallaceRoom_Milotic:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Milotic: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Ooootic.$"
+

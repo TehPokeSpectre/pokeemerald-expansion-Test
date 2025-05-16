@@ -1297,3 +1297,31 @@ RustboroCity_Text_YouCanHave2On2Battle:
 	.string "they'll both challenge you.\p"
 	.string "Don't you think it'd be cool if you\n"
 	.string "could beat two TRAINERS by yourself?$"
+
+RustboroCity_EventScript_Gigalith::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GIGALITH, CRY_MODE_NORMAL
+	msgbox RustboroCity_Gigalith, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RustboroCity_EventScript_Tinkatink::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TINKATINK, CRY_MODE_NORMAL
+	msgbox RustboroCity_Tinkatink, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+
+RustboroCity_Gigalith:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Gigalith: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Guruaraa.$"
+
+RustboroCity_Tinkatink:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Tinkatink: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tinka-tink?$"
+

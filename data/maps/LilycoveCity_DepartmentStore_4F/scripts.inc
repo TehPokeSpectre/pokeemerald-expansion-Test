@@ -66,3 +66,16 @@ LilycoveCity_DepartmentStore_4F_Text_PokemonOnlyHaveFourMoves:
 	.string "I'd like to get all the different TMs,\n"
 	.string "but a POKéMON learns only four moves.$"
 
+LilycoveDept4_EventScript_Nickit::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NICKIT, CRY_MODE_NORMAL
+	msgbox LilycoveDept4_Nickit, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LilycoveDept4_Nickit:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Nickit: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kiiitik!$"
+

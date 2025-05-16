@@ -133,3 +133,16 @@ MtPyre_2F_Text_ZanderPostBattle:
 	.string "anything move…\p"
 	.string "I shouldn't have come here to train…$"
 
+MtPyre_2F_EventScript_Duskull::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DUSKULL, CRY_MODE_NORMAL
+	msgbox MtPyre_2F_Duskull, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_2F_Duskull:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Duskull: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Duuuukk...$"
+

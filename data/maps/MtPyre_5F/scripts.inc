@@ -23,3 +23,16 @@ MtPyre_4F_Text_TashaPostBattle:
 	.string "Stay…\n"
 	.string "Won't you stay with me?$"
 
+MtPyre_5F_EventScript_Shuppet::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SHUPPET, CRY_MODE_NORMAL
+	msgbox MtPyre_5F_Shuppet, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_5F_Shuppet:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Shuppet: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Shuppp!$"
+

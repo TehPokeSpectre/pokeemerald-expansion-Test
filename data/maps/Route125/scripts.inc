@@ -81,3 +81,16 @@ Route125_EventScript_Auron::
 	msgbox Route125_Text_AuronPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route125_EventScript_Eiscue::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_EISCUE, CRY_MODE_NORMAL
+	msgbox Route125_Eiscue, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route125_Eiscue:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Eiscue: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Siiicue.$"
+

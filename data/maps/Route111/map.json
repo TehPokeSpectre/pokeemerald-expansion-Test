@@ -627,6 +627,84 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route111_EventScript_RockSmashTipFatMan",
       "flag": "FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BRAMBLEGHAST)",
+      "x": 25,
+      "y": 58,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 6,
+      "movement_range_y": 15,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Brambleghast",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LARVESTA)",
+      "x": 24,
+      "y": 41,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Larvesta",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BRAMBLIN)",
+      "x": 16,
+      "y": 45,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
+      "movement_range_x": 6,
+      "movement_range_y": 15,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Bramblin",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HIPPOWDON)",
+      "x": 31,
+      "y": 99,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Hippowdon",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MARACTUS)",
+      "x": 22,
+      "y": 102,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Maractus",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(WOOPER)",
+      "x": 12,
+      "y": 117,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Desert_EventScript_Wooper",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -663,6 +741,20 @@
       "y": 113,
       "elevation": 0,
       "dest_map": "MAP_TRAINER_HILL_ENTRANCE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ULTRA_DESERT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_ULTRA_DESERT",
       "dest_warp_id": "0"
     }
   ],
@@ -1020,13 +1112,6 @@
       "y": 50,
       "elevation": 0,
       "secret_base_id": "SECRET_BASE_YELLOW_CAVE3_1"
-    },
-    {
-      "type": "secret_base",
-      "x": 33,
-      "y": 34,
-      "elevation": 0,
-      "secret_base_id": "SECRET_BASE_YELLOW_CAVE1_1"
     },
     {
       "type": "sign",

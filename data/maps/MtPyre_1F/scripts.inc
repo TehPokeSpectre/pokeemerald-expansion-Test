@@ -45,3 +45,16 @@ MtPyre_1F_Text_RestingPlaceOfZigzagoon:
 	.string "This is the final resting place of my\n"
 	.string "ZIGZAGOON. I cherished it…$"
 
+MtPyre_1F_EventScript_Mimikyu::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MIMIKYU, CRY_MODE_NORMAL
+	msgbox MtPyre_1F_Mimikyu, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtPyre_1F_Mimikyu:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Mimikyu: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Mimi! Miku!!!$"
+

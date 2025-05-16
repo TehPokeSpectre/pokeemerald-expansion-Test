@@ -320,3 +320,16 @@ MauvilleCity_BikeShop_Text_Jumps:
 	.string "change directions while jumping.\p"
 	.string "Want to read a different page?$"
 
+MauvilleCity_BikeShop__EventScript_Chimchar::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHIMCHAR, CRY_MODE_NORMAL
+	msgbox MauvilleCity_BikeShop_Chimchar, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MauvilleCity_BikeShop_Chimchar:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Chimchar: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Char! Chimchar!$"
+

@@ -97,3 +97,16 @@ FallarborTown_MoveRelearnersHouse_Text_CantTeachEgg:
 	.string "Hunh? There isn't a single move that\n"
 	.string "I can teach an EGG.$"
 
+FallarborTown_EventScript_Charmander::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHARMANDER, CRY_MODE_NORMAL
+	msgbox FallarborTown_Charmander, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FallarborTown_Charmander:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Charmander: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Char Char!$"
+

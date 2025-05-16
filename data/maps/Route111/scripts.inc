@@ -727,3 +727,85 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Desert_EventScript_Bramblin::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BRAMBLIN, CRY_MODE_NORMAL
+	msgbox Desert_Bramblin, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_EventScript_Brambleghast::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_BRAMBLEGHAST, CRY_MODE_NORMAL
+	msgbox Desert_Brambleghast, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_EventScript_Larvesta::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LARVESTA, CRY_MODE_NORMAL
+	msgbox Desert_Larvesta, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_EventScript_Hippowdon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HIPPOWDON, CRY_MODE_NORMAL
+	msgbox Desert_Hippowdon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_Bramblin:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Bramblin: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Wooiiiln!$"
+
+Desert_Brambleghast:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Brambleghast: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Waahhast!$"
+
+Desert_Larvesta:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Larvesta: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vaarrlll.$"
+
+Desert_Hippowdon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Hippowdon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pooohhhd...$"
+
+Desert_EventScript_Maractus::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MARACTUS, CRY_MODE_NORMAL
+	msgbox Desert_Maractus, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_Maractus:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Maractus: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Marach!!!\p"
+	.string "It has a sign saying 'clap for Jeb!'$"
+
+Desert_EventScript_Wooper::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_WOOPER, CRY_MODE_NORMAL
+	msgbox Desert_Wooper, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Desert_Wooper:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Wooper: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Woop.$"
+
+
+
+

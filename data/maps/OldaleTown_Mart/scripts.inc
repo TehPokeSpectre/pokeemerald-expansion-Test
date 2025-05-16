@@ -66,3 +66,16 @@ OldaleTown_Mart_Text_RestoreHPWithPotion:
 	.string "To prevent your POKéMON from fainting,\n"
 	.string "restore its HP with a POTION.$"
 
+OldaleMart_EventScript_Gimmighoul::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GIMMIGHOUL, CRY_MODE_NORMAL
+	msgbox OldaleMart_Gimmighoul, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+OldaleMart_Gimmighoul:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Gimmighoul: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Ciioohoul!$"
+

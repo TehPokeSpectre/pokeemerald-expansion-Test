@@ -70,3 +70,16 @@ SootopolisCity_PokemonCenter_1F_Text_ArentPokemonOurFriends:
 	.string "Aren't POKéMON our friends?\p"
 	.string "Why are they going wild this way?$"
 
+SootopolisCenter_EventScript_Florges::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FLORGES, CRY_MODE_NORMAL
+	msgbox SootopolisCenter_Florges, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SootopolisCenter_Florges:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Florges: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Flurieg!$"
+

@@ -353,3 +353,16 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+Route103_EventScript_Drednaw::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DREDNAW, CRY_MODE_NORMAL
+	msgbox Route103_Drednaw, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route103_Drednaw:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Drednaw: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Drednaaaw!$"
+

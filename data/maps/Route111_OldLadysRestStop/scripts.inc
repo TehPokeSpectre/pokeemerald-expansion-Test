@@ -48,3 +48,18 @@ Route111_OldLadysRestStop_Text_DontNeedToBeShy:
 	.string "Is that so?\n"
 	.string "You don't need to be shy about it.$"
 
+Route111_EventScript_Togepi::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TOGEPI, CRY_MODE_NORMAL
+	msgbox Route111_Togepi, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route111_Togepi:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Togepi: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Priii! Prii! Piii!$"
+
+
+

@@ -154,3 +154,30 @@ FortreeCity_Text_GymSign:
 	.string "“The bird user taking flight into\n"
 	.string "the world.”$"
 
+Fortree_EventScript_Passimian::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PASSIMIAN, CRY_MODE_NORMAL
+	msgbox Fortree_Passimian, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fortree_Passimian:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Passimian: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Siammian!$"
+
+Fortree_EventScript_Leafeon::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LEAFEON, CRY_MODE_NORMAL
+	msgbox Fortree_Leafeon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Fortree_Leafeon:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Leafeon: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Leafoeow!$"
+
+

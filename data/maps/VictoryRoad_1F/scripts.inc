@@ -218,3 +218,44 @@ VictoryRoad_1F_Text_KatelynnDefeat:
 VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 	.string "See if I care.$"
+
+VictoryRoad_1F_EventScript_Gabite::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GABITE, CRY_MODE_NORMAL
+	msgbox VictoryRoad_1F_Gabite, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_1F_Gabite:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Gabite: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Gaaarbit!$"
+
+VictoryRoad_1F_EventScript_Hakamoo::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_HAKAMO_O, CRY_MODE_NORMAL
+	msgbox VictoryRoad_1F_Hakamoo, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_1F_Hakamoo:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Hakamo-o: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Kaaamo!$"
+
+VictoryRoad_1F_EventScript_Arctibax::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ARCTIBAX, CRY_MODE_NORMAL
+	msgbox VictoryRoad_1F_Arctibax, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VictoryRoad_1F_Arctibax:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Arctibax: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Xucalibur!$"
+
+

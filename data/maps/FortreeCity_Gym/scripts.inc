@@ -317,3 +317,17 @@ FortreeCity_Gym_Text_WinonaRematchNeedTwoMons:
 	.string "POKéMON with you?\p"
 	.string "Please return with two POKéMON\n"
 	.string "at the very least.$"
+
+FortreeGym_EventScript_Altaria::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ALTARIA, CRY_MODE_NORMAL
+	msgbox FortreeGym_Altaria, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeGym_Altaria:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Altaria: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Riiiaalt.$"
+

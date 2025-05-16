@@ -55,3 +55,16 @@ DewfordTown_House2_Text_BrawlySoCool:
 	.string "He's so cool…\n"
 	.string "Everyone idolizes him.$"
 
+Dewford_EventScript_Chespin::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHESPIN, CRY_MODE_NORMAL
+	msgbox Dewford_Chespin, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Dewford_Chespin:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Chespin: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Cheees!$"
+

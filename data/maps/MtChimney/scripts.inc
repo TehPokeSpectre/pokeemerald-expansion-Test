@@ -859,3 +859,16 @@ MtChimney_Text_SawyerPostRematch:
 	.string "Actually, it really is hot here.\n"
 	.string "I'm overdressed for these parts.$"
 
+MtChimney_EventScript_Dachsbun::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DACHSBUN, CRY_MODE_NORMAL
+	msgbox MtChimney_Dachsbun, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MtChimney_Dachsbun:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dachsbun: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Daach!!!$"
+

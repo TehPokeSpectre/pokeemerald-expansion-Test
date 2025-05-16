@@ -19,7 +19,7 @@ PetalburgCity_Mart_Pokemart_Basic:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_REPEL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_ATTACK
@@ -42,7 +42,7 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_REPEL
 	.2byte ITEM_X_SPEED
 	.2byte ITEM_X_ATTACK
@@ -79,4 +79,17 @@ PetalburgCity_Mart_Text_TakeSomeAntidotesWithYou:
 	.string "If you walk around with a poisoned\n"
 	.string "POKéMON, it will lose HP until it faints.\l"
 	.string "Take some ANTIDOTES with you.$"
+
+PetalburgMart_EventScript_Meowth_A::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MEOWTH, CRY_MODE_NORMAL
+	msgbox PetalburgMart_Meowth, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgMart_Meowth:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Meowth: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Meooow! Purrr...$"
 

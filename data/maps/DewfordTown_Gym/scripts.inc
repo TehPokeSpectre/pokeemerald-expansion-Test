@@ -457,3 +457,17 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
 	.string "with at least two POKéMON.$"
+
+DewfordGym_EventScript_Makuhita::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MAKUHITA, CRY_MODE_NORMAL
+	msgbox DewfordGym_Makuhita, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+DewfordGym_Makuhita:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Makuhita: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Huuuita!$"
+

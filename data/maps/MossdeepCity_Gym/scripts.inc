@@ -651,3 +651,30 @@ MossdeepCity_Gym_Text_TateAndLizaRematchNeedTwoMons:
 	.string "LIZA: You brought just one POKéMON!\p"
 	.string "TATE: We need you to bring at least…\n"
 	.string "LIZA: Two POKéMON when you come back.$"
+
+MossdeepGym_EventScript_Solrock::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SOLROCK, CRY_MODE_NORMAL
+	msgbox MossdeepGym_Solrock, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepGym_Solrock:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Solrock: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Soloook!$"
+
+MossdeepGym_EventScript_Lunatone::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LUNATONE, CRY_MODE_NORMAL
+	msgbox MossdeepGym_Lunatone, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepGym_Lunatone:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Lunatone: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Lunaaal!$"
+

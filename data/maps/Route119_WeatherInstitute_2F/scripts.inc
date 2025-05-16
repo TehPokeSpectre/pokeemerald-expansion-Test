@@ -331,3 +331,30 @@ Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
 	.string "The occasional rainfall is a blessing,\n"
 	.string "really.$"
 
+Weatherplace_EventScript_Dottler::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_DOTTLER, CRY_MODE_NORMAL
+	msgbox Weatherplace_Dottler, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Weatherplace_Dottler:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Dottler: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Diii-tiller!$"
+
+Weatherplace_EventScript_Castform::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CASTFORM, CRY_MODE_NORMAL
+	msgbox Weatherplace_Castform, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Weatherplace_Castform:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Castform: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Caaaas.$"
+
+

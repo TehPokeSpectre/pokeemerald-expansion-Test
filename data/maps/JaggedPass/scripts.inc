@@ -266,3 +266,29 @@ JaggedPass_Text_AutumnPostBattle:
 	.string "What is that odd rock protrusion\n"
 	.string "a little up the hill from here?$"
 
+JaggedPass_EventScript_Espathra::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ESPATHRA, CRY_MODE_NORMAL
+	msgbox JaggedPass_Espathra, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JaggedPass_EventScript_Salandit::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SALANDIT, CRY_MODE_NORMAL
+	msgbox JaggedPass_Salandit, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+JaggedPass_Espathra:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Espathra: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Spaahr?$"
+
+JaggedPass_Salandit:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Salandit: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hiissss.$"
+

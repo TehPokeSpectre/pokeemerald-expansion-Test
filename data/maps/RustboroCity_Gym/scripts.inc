@@ -281,3 +281,19 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "You only have one POKéMON with you?\p"
 	.string "Please return with at least one more\n"
 	.string "POKéMON.$"
+
+RustboroCity_EventScript_Nosepass::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_NOSEPASS, CRY_MODE_NORMAL
+	msgbox RustboroCityGym_Nosepass, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RustboroCityGym_Nosepass:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Nosepass: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Nooss.$"
+
+
+

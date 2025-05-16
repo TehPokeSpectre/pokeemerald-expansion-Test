@@ -36,3 +36,16 @@ MossdeepCity_PokemonCenter_1F_Text_AbilitiesMightChangeMoves:
 	.string "POKéMON, some moves might change\l"
 	.string "or not work at all.$"
 
+MossdeepCenter_EventScript_Clefable::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFABLE, CRY_MODE_NORMAL
+	msgbox MossdeepCenter_Clefable, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+MossdeepCenter_Clefable:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Clefable: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Celf!$"
+

@@ -112,3 +112,16 @@ FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:
 	.string "seedlings of hardy trees that thrive\l"
 	.string "even in volcanic ash.$"
 
+Route113_EventScript_IndeedeeF::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_INDEEDEE_F, CRY_MODE_NORMAL
+	msgbox FallarborTown_PokemonCenter_IndeedeeF, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FallarborTown_PokemonCenter_IndeedeeF:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Indeedee: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}De-dee!$"
+

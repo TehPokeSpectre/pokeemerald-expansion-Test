@@ -42,3 +42,16 @@ VerdanturfTown_PokemonCenter_1F_Text_VisitForBattleTent:
 	.string "Or is there somebody here that you\n"
 	.string "came to see?$"
 
+VerdanturfCenter_EventScript_Kirlia::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
+	msgbox VerdanturfCenter_Kirlia, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VerdanturfCenter_Kirlia:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kirlia: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Liiiah!$"
+

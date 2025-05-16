@@ -1,0 +1,39 @@
+{
+  "id": "MAP_SLOWPOKE_CHANNEL",
+  "name": "SlowpokeChannel",
+  "layout": "LAYOUT_SLOWPOKE_CHANNEL",
+  "music": "MUS_ROUTE104",
+  "region_map_section": "MAPSEC_ROUTE_105",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_ROUTE105",
+      "offset": -40,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_SLOWPOKE_ISLE",
+      "offset": -13,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

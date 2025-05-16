@@ -53,3 +53,16 @@ FortreeCity_Mart_Text_RareCandyMakesMonGrow:
 	.string "A RARE CANDY makes a POKéMON grow\n"
 	.string "immediately by one level.$"
 
+FortreeMart_EventScript_Jumpluff::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_JUMPLUFF, CRY_MODE_NORMAL
+	msgbox FortreeMart_Jumpluff, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+FortreeMart_Jumpluff:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Jumpluff: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Jummpif!$"
+

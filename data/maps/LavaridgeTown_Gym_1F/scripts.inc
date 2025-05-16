@@ -402,3 +402,16 @@ LavaridgeTown_Gym_1F_Text_FlanneryRematchNeedTwoMons:
 	.string "that can battle?\p"
 	.string "I hate to say this, but when you come\n"
 	.string "see me, bring at least two POKéMON.$"
+
+LavaridgeGym_EventScript_Torkoal::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TORKOAL, CRY_MODE_NORMAL
+	msgbox LavaridgeGym_Torkoal, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+LavaridgeGym_Torkoal:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Torkoal: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Tooooork.$"

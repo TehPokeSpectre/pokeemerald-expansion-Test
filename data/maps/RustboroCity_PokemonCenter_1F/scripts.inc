@@ -47,3 +47,16 @@ RustboroCity_PokemonCenter_1F_Text_HMCutNextDoor:
 	.string "I used it to teach my POKéMON how to\n"
 	.string "CUT down skinny trees.$"
 
+RustboroCenter_EventScript_Kanga::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KANGASKHAN, CRY_MODE_NORMAL
+	msgbox RustboroCenter_Kanga, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+RustboroCenter_Kanga:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kangaskhan: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Skhaanga!$"
+

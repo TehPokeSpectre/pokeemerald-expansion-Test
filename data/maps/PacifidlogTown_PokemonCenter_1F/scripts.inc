@@ -48,3 +48,18 @@ PacifidlogTown_PokemonCenter_1F_Text_AncestorsLivedOnBoats:
 	.string "because they were searching for\l"
 	.string "something.$"
 
+PacifidlogCenter_EventScript_Manaphy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MANAPHY, CRY_MODE_NORMAL
+	msgbox PacifidlogCentert_Manaphy, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PacifidlogCentert_Manaphy:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Manaphy: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pheey!$"
+
+
+

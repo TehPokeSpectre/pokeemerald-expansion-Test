@@ -471,3 +471,31 @@ Route116_Text_TrainerTipsBagHasPockets:
 	.string "No TRAINER can afford to be without\n"
 	.string "a BAG of their own.$"
 
+Route119_EventScript_Krokorok::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_KROKOROK, CRY_MODE_NORMAL
+	msgbox Route119_Krokorok, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route119_Krokorok:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Krokorok: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Krokorr.$"
+
+Route119_EventScript_Luxio::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LUXIO, CRY_MODE_NORMAL
+	msgbox Route119_Luxio, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Route119_Luxio:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Luxio: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Luuuiox!$"
+
+
+

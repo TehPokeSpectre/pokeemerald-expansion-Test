@@ -134,4 +134,20 @@ PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
 	.string "he's surprisingly strong-willed.\p"
 	.string "I'm sure that he'll come back safe\n"
 	.string "and sound one day!$"
+	
+
+PetalburgCity_EventScript_GROOKEY::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GROOKEY, CRY_MODE_NORMAL
+	msgbox PetalburgCity_GROOKEY, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+PetalburgCity_GROOKEY:
+    .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Grookey: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Grkeey!$"
+
+
 

@@ -398,3 +398,17 @@ SlateportCity_PokemonFanClub_Text_Zigzagoon:
 SlateportCity_PokemonFanClub_Text_Azumarill:
 	.string "AZUMARILL: Marimari?$"
 
+SlateportCity_PokemonFanClub_EventScript_Pancham::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PANCHAM, CRY_MODE_NORMAL
+	msgbox SlateportCity_PokemonFanClub_Pancham, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+SlateportCity_PokemonFanClub_Pancham:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Pancham: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pannah!$"
+
+

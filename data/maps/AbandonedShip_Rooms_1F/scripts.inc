@@ -75,3 +75,18 @@ AbandonedShip_Rooms_1F_Text_DemetriusPostBattle:
 	.string "I'm in trouble with my mom, so I ran.\n"
 	.string "Keep it a secret where I am!$"
 
+AbandonedShip_EventScript_Trubbish::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TRUBBISH, CRY_MODE_NORMAL
+	msgbox AbandonedShip_Trubbish, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+AbandonedShip_Trubbish:
+	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Trubbish: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Trwub!$"
+
+
+
