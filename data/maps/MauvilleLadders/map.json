@@ -1,0 +1,95 @@
+{
+  "id": "MAP_MAUVILLE_LADDERS",
+  "name": "MauvilleLadders",
+  "layout": "LAYOUT_MAUVILLE_LADDERS",
+  "music": "MUS_MT_PYRE",
+  "region_map_section": "MAPSEC_MAUVILLE_DEPTHS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 39,
+      "y": 32,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_MANECTITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_RECEIVED_MANECTITE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_DEPTHS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 10,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 34,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 39,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 35,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 36,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_LADDERS",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 38,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAUVILLE_ENTRANCE",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

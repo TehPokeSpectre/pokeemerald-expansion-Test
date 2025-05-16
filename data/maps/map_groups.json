@@ -100,7 +100,15 @@
     "VerdanturfFields",
     "SlowpokeChannel",
     "SlowpokeIsle",
-    "InnerGraniteCave"
+    "InnerGraniteCave",
+    "NewMauville_Cave",
+    "Mauville_Depths",
+    "MauvilleLadders",
+    "Floor1Subbit",
+    "SubbitHouseFloor2",
+    "LilycoveCity_DepartmentStore_0F",
+    "LilycoveCity_Dept_B1",
+    "Deptstore_Basement"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

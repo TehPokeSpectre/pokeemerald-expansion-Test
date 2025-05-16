@@ -219,7 +219,8 @@
 #define MAPSEC_VERDENTURF_FIELDS            0xD7
 #define MAPSEC_SLOWPOKE_ISLE                0xD8
 #define MAPSEC_INNER_GRANITE_CAVE           0xD9
-#define MAPSEC_NONE                         0xDA
+#define MAPSEC_MAUVILLE_DEPTHS              0xDA
+#define MAPSEC_NONE                         0xDB
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

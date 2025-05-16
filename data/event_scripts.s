@@ -1170,3 +1170,19 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SlowpokeIsle/scripts.inc"
 
 	.include "data/maps/InnerGraniteCave/scripts.inc"
+
+	.include "data/maps/NewMauville_Cave/scripts.inc"
+
+	.include "data/maps/Mauville_Depths/scripts.inc"
+
+	.include "data/maps/MauvilleLadders/scripts.inc"
+
+	.include "data/maps/Floor1Subbit/scripts.inc"
+
+	.include "data/maps/SubbitHouseFloor2/scripts.inc"
+
+	.include "data/maps/LilycoveCity_DepartmentStore_0F/scripts.inc"
+
+	.include "data/maps/LilycoveCity_Dept_B1/scripts.inc"
+
+	.include "data/maps/Deptstore_Basement/scripts.inc"
