@@ -22,6 +22,11 @@
       "map": "MAP_FORTREE_CITY",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_FORTREE_JUNGLE",
+      "offset": 33,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -597,7 +602,7 @@
       "x": 33,
       "y": 109,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE119_HOUSE",
+      "dest_map": "MAP_ROUTE119HOUSE_WORMHOLE",
       "dest_warp_id": "0"
     }
   ],

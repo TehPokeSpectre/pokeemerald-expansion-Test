@@ -1,0 +1,48 @@
+{
+  "id": "MAP_FALLARBOR_CAVE_WORMHOLE",
+  "name": "FallarborCaveWormhole",
+  "layout": "LAYOUT_FALLARBOR_CAVE_WORMHOLE",
+  "music": "MUS_PETALBURG_WOODS",
+  "region_map_section": "MAPSEC_ROUTE_113",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ULTRA_DESERT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_ULTRA_DESERT",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE113",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

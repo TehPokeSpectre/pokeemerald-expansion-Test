@@ -1186,3 +1186,93 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/LilycoveCity_Dept_B1/scripts.inc"
 
 	.include "data/maps/Deptstore_Basement/scripts.inc"
+
+	.include "data/maps/FortreeJungle/scripts.inc"
+
+	.include "data/maps/ChampionsRanchEntry/scripts.inc"
+
+	.include "data/maps/EntrytoRanch/scripts.inc"
+
+	.include "data/maps/KantoWilds/scripts.inc"
+
+	.include "data/maps/JohtoGrove/scripts.inc"
+
+	.include "data/maps/JohtoHoennCave/scripts.inc"
+
+	.include "data/maps/HoennPlains/scripts.inc"
+
+	.include "data/maps/SinnohUplands/scripts.inc"
+
+	.include "data/maps/UnovaFlats/scripts.inc"
+
+	.include "data/maps/KalosMeadows/scripts.inc"
+
+	.include "data/maps/AlolanDowns/scripts.inc"
+
+	.include "data/maps/GalarianTundra/scripts.inc"
+
+	.include "data/maps/DevoncorpLabs/scripts.inc"
+
+	.include "data/maps/PastSafeHouse/scripts.inc"
+
+	.include "data/maps/PastShoalCave/scripts.inc"
+
+	.include "data/maps/PastMossdeep/scripts.inc"
+
+	.include "data/maps/PastPortal/scripts.inc"
+
+	.include "data/maps/PastMossdeepCave/scripts.inc"
+
+	.include "data/maps/PastMossdeepSadaRoom/scripts.inc"
+
+	.include "data/maps/OceanBridge/scripts.inc"
+
+	.include "data/maps/PastLilycove/scripts.inc"
+
+	.include "data/maps/PastLilycoveCave/scripts.inc"
+
+	.include "data/maps/PastMtPyrePreSummit/scripts.inc"
+
+	.include "data/maps/PastMtPyrePeak/scripts.inc"
+
+	.include "data/maps/FuturePortal/scripts.inc"
+
+	.include "data/maps/SafeRoom/scripts.inc"
+
+	.include "data/maps/FutureRusturfTunnel/scripts.inc"
+
+	.include "data/maps/VerdanturfFuture/scripts.inc"
+
+	.include "data/maps/Route117Paradox/scripts.inc"
+
+	.include "data/maps/MauvilleCenterParadox/scripts.inc"
+
+	.include "data/maps/WallshouseFuture/scripts.inc"
+
+	.include "data/maps/FutureTent/scripts.inc"
+
+	.include "data/maps/House/scripts.inc"
+
+	.include "data/maps/FutureGameCorner/scripts.inc"
+
+	.include "data/maps/GymFuture/scripts.inc"
+
+	.include "data/maps/UltraDeepSea/scripts.inc"
+
+	.include "data/maps/UltraJungle/scripts.inc"
+
+	.include "data/maps/UltraDesert/scripts.inc"
+
+	.include "data/maps/UltraPlant/scripts.inc"
+
+	.include "data/maps/UltraCrater/scripts.inc"
+
+	.include "data/maps/UltraForest/scripts.inc"
+
+	.include "data/maps/UltraWilds/scripts.inc"
+
+	.include "data/maps/UltraRuins/scripts.inc"
+
+	.include "data/maps/Route119HouseWormhole/scripts.inc"
+
+	.include "data/maps/FallarborCaveWormhole/scripts.inc"

@@ -207,3 +207,87 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+const u16 gMetatiles_CavePast[] = INCBIN_U16("data/tilesets/secondary/cave_past/metatiles.bin");
+const u16 gMetatileAttributes_CavePast[] = INCBIN_U16("data/tilesets/secondary/cave_past/metatile_attributes.bin");
+
+const u16 gMetatiles_MossdeepPast[] = INCBIN_U16("data/tilesets/secondary/mossdeep_past/metatiles.bin");
+const u16 gMetatileAttributes_MossdeepPast[] = INCBIN_U16("data/tilesets/secondary/mossdeep_past/metatile_attributes.bin");
+
+const u16 gMetatiles_MauvilleParadox[] = INCBIN_U16("data/tilesets/primary/mauville_paradox/metatiles.bin");
+const u16 gMetatileAttributes_MauvilleParadox[] = INCBIN_U16("data/tilesets/primary/mauville_paradox/metatile_attributes.bin");
+
+const u16 gMetatiles_MauvilleCityParadox[] = INCBIN_U16("data/tilesets/secondary/mauville_city_paradox/metatiles.bin");
+const u16 gMetatileAttributes_MauvilleCityParadox[] = INCBIN_U16("data/tilesets/secondary/mauville_city_paradox/metatile_attributes.bin");
+
+const u16 gMetatiles_BuildingCustom[] = INCBIN_U16("data/tilesets/secondary/building_custom/metatiles.bin");
+const u16 gMetatileAttributes_BuildingCustom[] = INCBIN_U16("data/tilesets/secondary/building_custom/metatile_attributes.bin");
+
+const u16 gMetatiles_GamecornerFuture[] = INCBIN_U16("data/tilesets/secondary/gamecorner_future/metatiles.bin");
+const u16 gMetatileAttributes_GamecornerFuture[] = INCBIN_U16("data/tilesets/secondary/gamecorner_future/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraDeepSea[] = INCBIN_U16("data/tilesets/secondary/ultra_deep_sea/metatiles.bin");
+const u16 gMetatileAttributes_UltraDeepSea[] = INCBIN_U16("data/tilesets/secondary/ultra_deep_sea/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraJungle[] = INCBIN_U16("data/tilesets/primary/ultra_jungle/metatiles.bin");
+const u16 gMetatileAttributes_UltraJungle[] = INCBIN_U16("data/tilesets/primary/ultra_jungle/metatile_attributes.bin");
+
+const u16 gMetatiles_Ultrajungle[] = INCBIN_U16("data/tilesets/secondary/ultrajungle/metatiles.bin");
+const u16 gMetatileAttributes_Ultrajungle[] = INCBIN_U16("data/tilesets/secondary/ultrajungle/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraDesert[] = INCBIN_U16("data/tilesets/primary/ultra_desert/metatiles.bin");
+const u16 gMetatileAttributes_UltraDesert[] = INCBIN_U16("data/tilesets/primary/ultra_desert/metatile_attributes.bin");
+
+const u16 gMetatiles_Ultradesert[] = INCBIN_U16("data/tilesets/secondary/ultradesert/metatiles.bin");
+const u16 gMetatileAttributes_Ultradesert[] = INCBIN_U16("data/tilesets/secondary/ultradesert/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraPlant[] = INCBIN_U16("data/tilesets/primary/ultra_plant/metatiles.bin");
+const u16 gMetatileAttributes_UltraPlant[] = INCBIN_U16("data/tilesets/primary/ultra_plant/metatile_attributes.bin");
+
+const u16 gMetatiles_ultraplant[] = INCBIN_U16("data/tilesets/secondary/ultraplant/metatiles.bin");
+const u16 gMetatileAttributes_ultraplant[] = INCBIN_U16("data/tilesets/secondary/ultraplant/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraCrater[] = INCBIN_U16("data/tilesets/primary/ultra_crater/metatiles.bin");
+const u16 gMetatileAttributes_UltraCrater[] = INCBIN_U16("data/tilesets/primary/ultra_crater/metatile_attributes.bin");
+
+const u16 gMetatiles_ultracrater[] = INCBIN_U16("data/tilesets/secondary/ultracrater/metatiles.bin");
+const u16 gMetatileAttributes_ultracrater[] = INCBIN_U16("data/tilesets/secondary/ultracrater/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraForest[] = INCBIN_U16("data/tilesets/primary/ultra_forest/metatiles.bin");
+const u16 gMetatileAttributes_UltraForest[] = INCBIN_U16("data/tilesets/primary/ultra_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_Ultraforest[] = INCBIN_U16("data/tilesets/secondary/ultraforest/metatiles.bin");
+const u16 gMetatileAttributes_Ultraforest[] = INCBIN_U16("data/tilesets/secondary/ultraforest/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraWilds[] = INCBIN_U16("data/tilesets/secondary/ultra_wilds/metatiles.bin");
+const u16 gMetatileAttributes_UltraWilds[] = INCBIN_U16("data/tilesets/secondary/ultra_wilds/metatile_attributes.bin");
+
+const u16 gMetatiles_UltraRuins[] = INCBIN_U16("data/tilesets/primary/ultra_ruins/metatiles.bin");
+const u16 gMetatileAttributes_UltraRuins[] = INCBIN_U16("data/tilesets/primary/ultra_ruins/metatile_attributes.bin");
+
+const u16 gMetatiles_ultraruins[] = INCBIN_U16("data/tilesets/secondary/ultraruins/metatiles.bin");
+const u16 gMetatileAttributes_ultraruins[] = INCBIN_U16("data/tilesets/secondary/ultraruins/metatile_attributes.bin");
+
+const u16 gMetatiles_RusturfWormhole[] = INCBIN_U16("data/tilesets/primary/rusturf_wormhole/metatiles.bin");
+const u16 gMetatileAttributes_RusturfWormhole[] = INCBIN_U16("data/tilesets/primary/rusturf_wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_rusturfwormhole[] = INCBIN_U16("data/tilesets/secondary/rusturfwormhole/metatiles.bin");
+const u16 gMetatileAttributes_rusturfwormhole[] = INCBIN_U16("data/tilesets/secondary/rusturfwormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_MeteorfallsWormhole[] = INCBIN_U16("data/tilesets/secondary/meteorfalls_wormhole/metatiles.bin");
+const u16 gMetatileAttributes_MeteorfallsWormhole[] = INCBIN_U16("data/tilesets/secondary/meteorfalls_wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_Route119Wormhole[] = INCBIN_U16("data/tilesets/secondary/route_119wormhole/metatiles.bin");
+const u16 gMetatileAttributes_Route119Wormhole[] = INCBIN_U16("data/tilesets/secondary/route_119wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_InsideshipWormhole[] = INCBIN_U16("data/tilesets/secondary/insideship_wormhole/metatiles.bin");
+const u16 gMetatileAttributes_InsideshipWormhole[] = INCBIN_U16("data/tilesets/secondary/insideship_wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_MtpryeWormhole[] = INCBIN_U16("data/tilesets/secondary/mtprye_wormhole/metatiles.bin");
+const u16 gMetatileAttributes_MtpryeWormhole[] = INCBIN_U16("data/tilesets/secondary/mtprye_wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_CaveWormhole[] = INCBIN_U16("data/tilesets/secondary/cave_wormhole/metatiles.bin");
+const u16 gMetatileAttributes_CaveWormhole[] = INCBIN_U16("data/tilesets/secondary/cave_wormhole/metatile_attributes.bin");
+
+const u16 gMetatiles_Route111Wormhole[] = INCBIN_U16("data/tilesets/secondary/route_111wormhole/metatiles.bin");
+const u16 gMetatileAttributes_Route111Wormhole[] = INCBIN_U16("data/tilesets/secondary/route_111wormhole/metatile_attributes.bin");

@@ -1,0 +1,146 @@
+{
+  "id": "MAP_SINNOH_UPLANDS",
+  "name": "SinnohUplands",
+  "layout": "LAYOUT_SINNOH_UPLANDS",
+  "music": "MUS_DEWFORD",
+  "region_map_section": "MAPSEC_SINNOH_UPLANDS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_HOENN_PLAINS",
+      "offset": 12,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_UNOVA_FLATS",
+      "offset": 0,
+      "direction": "emerge"
+    },
+    {
+      "map": "MAP_UNOVA_FLATS",
+      "offset": 19,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_KALOS_MEADOWS",
+      "offset": 6,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(INFERNAPE)",
+      "x": 31,
+      "y": 10,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Infernape",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARAPTOR)",
+      "x": 39,
+      "y": 10,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Staraptor",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TORTERRA)",
+      "x": 28,
+      "y": 8,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Torterra",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GLISCOR)",
+      "x": 28,
+      "y": 12,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Gliscor",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIBLE)",
+      "x": 42,
+      "y": 8,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Gible",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUIZEL)",
+      "x": 42,
+      "y": 12,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Buizel",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AMBIPOM)",
+      "x": 38,
+      "y": 5,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "SinnohUplands_EventScript_Ambipom",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ChampionsRanch_EventScript_SinnohSign"
+    }
+  ]
+}

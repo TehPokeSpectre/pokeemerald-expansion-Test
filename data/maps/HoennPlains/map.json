@@ -1,0 +1,108 @@
+{
+  "id": "MAP_HOENN_PLAINS",
+  "name": "HoennPlains",
+  "layout": "LAYOUT_HOENN_PLAINS",
+  "music": "MUS_OLDALE",
+  "region_map_section": "MAPSEC_HOENN_PLAINS",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_JOHTO_GROVE",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_JOHTO_GROVE",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_SINNOH_UPLANDS",
+      "offset": -12,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SCEPTILE)",
+      "x": 26,
+      "y": 4,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HoennPlains_EventScript_Sceptile",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TORKOAL)",
+      "x": 14,
+      "y": 12,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SWELLOW)",
+      "x": 19,
+      "y": 17,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HoennPlains_EventScript_Swellow",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CORPHISH)",
+      "x": 26,
+      "y": 22,
+      "elevation": 11,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 10,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "HoennPlains_EventScript_Corphish",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_JOHTO_HOENN_CAVE",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "ChampionsRanch_EventScript_HoennSign"
+    }
+  ]
+}

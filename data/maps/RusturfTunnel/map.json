@@ -184,14 +184,14 @@
       "x": 43,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ENTRY_CAVE_NIHILEGO",
+      "dest_map": "MAP_ULTRA_DEEP_SEA",
       "dest_warp_id": "1"
     },
     {
       "x": 44,
       "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ENTRY_CAVE_NIHILEGO",
+      "dest_map": "MAP_ULTRA_DEEP_SEA",
       "dest_warp_id": "0"
     }
   ],

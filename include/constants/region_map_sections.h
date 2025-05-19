@@ -220,7 +220,27 @@
 #define MAPSEC_SLOWPOKE_ISLE                0xD8
 #define MAPSEC_INNER_GRANITE_CAVE           0xD9
 #define MAPSEC_MAUVILLE_DEPTHS              0xDA
-#define MAPSEC_NONE                         0xDB
+#define MAPSEC_FORTREE_JUNGLE               0xDB
+#define MAPSEC_KANTO_WILDS                  0xDC
+#define MAPSEC_JOHTO_GROVE                  0xDD
+#define MAPSEC_HOENN_PLAINS                 0xDE
+#define MAPSEC_SINNOH_UPLANDS               0xDF
+#define MAPSEC_UNOVA_FLATS                  0xE0
+#define MAPSEC_KALOS_MEADOWS                0xE1
+#define MAPSEC_ALOLAN_DOWNS                 0xE2
+#define MAPSEC_GALARIAN_TUNDRA              0xE3
+#define MAPSEC_PARADOX_PAST                 0xE4
+#define MAPSEC_PARADOX_FUTURE               0xE5
+#define MAPSEC_ULTRA_DEEP_SEA               0xE6
+#define MAPSEC_ULTRA_JUNGLE                 0xE7
+#define MAPSEC_ULTRA_DESERT                 0xE8
+#define MAPSEC_ULTRA_PLANT                  0xE9
+#define MAPSEC_ULTRA_CRATER                 0xEA
+#define MAPSEC_ULTRA_FOREST                 0xEB
+#define MAPSEC_ULTRA_WILDS                  0xEC
+#define MAPSEC_ULTRA_RUINS                  0xED
+#define MAPSEC_NONE                         0xEE
+
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

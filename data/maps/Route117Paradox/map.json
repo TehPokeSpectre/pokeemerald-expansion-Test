@@ -1,0 +1,235 @@
+{
+  "id": "MAP_ROUTE117PARADOX",
+  "name": "Route117Paradox",
+  "layout": "LAYOUT_ROUTE117PARADOX",
+  "music": "MUS_RG_LAVENDER",
+  "region_map_section": "MAPSEC_PARADOX_FUTURE",
+  "requires_flash": false,
+  "weather": "WEATHER_VOLCANIC_ASH",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_VERDANTURF_FUTURE",
+      "offset": 19,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_MAUVILLE_CENTER_PARADOX",
+      "offset": 9,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_THORNS)",
+      "x": 21,
+      "y": 33,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Subbit_EventScript_IronThorns",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_JUGULIS)",
+      "x": 34,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Subbit_EventScript_IronJugulis",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_HANDS)",
+      "x": 44,
+      "y": 40,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Subbit_EventScript_IronThorns",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_CROWN)",
+      "x": 32,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Subbit_EventScript_IronCrown",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "x": 43,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Future_EventScript_Ttarnite",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_TREADS)",
+      "x": 47,
+      "y": 22,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 11,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Subbit_EventScript_IronThorns",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Huntertext"
+    },
+    {
+      "type": "sign",
+      "x": 28,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 31,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 37,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Stonetext"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Ragnaroktext"
+    },
+    {
+      "type": "sign",
+      "x": 43,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_USNtext"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Skittytext"
+    },
+    {
+      "type": "sign",
+      "x": 43,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Mylovetext"
+    },
+    {
+      "type": "sign",
+      "x": 46,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 54,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "FutureZerograveyard_EventScript_Sign1"
+    },
+    {
+      "type": "sign",
+      "x": 43,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Future_Grandkidtext"
+    }
+  ]
+}
