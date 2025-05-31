@@ -39,6 +39,32 @@
       "trainer_sight_or_berry_tree_id": "ITEM_LATIASITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_RECEIVED_LATIASITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 52,
+      "y": 67,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM62",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ULTRA_RUINS_TM_PLAY_ROUGH"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 38,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM63",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ULTRA_RUINS_TM_DRAGON_DANCE"
     }
   ],
   "warp_events": [

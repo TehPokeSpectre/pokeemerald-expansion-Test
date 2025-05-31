@@ -5020,6 +5020,16 @@
       "secondary_tileset": "gTileset_CaveWormhole",
       "border_filepath": "data/layouts/FallarborCaveWormhole/border.bin",
       "blockdata_filepath": "data/layouts/FallarborCaveWormhole/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORTREE_JUNGLE_HOUSE",
+      "name": "FortreeJungleHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FortreeJungleHouse/border.bin",
+      "blockdata_filepath": "data/layouts/FortreeJungleHouse/map.bin"
     }
   ]
 }

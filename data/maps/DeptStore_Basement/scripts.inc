@@ -19,6 +19,7 @@ Basement_Pokemart_EnergyGuru:
 	.2byte ITEM_BANETTITE
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_SPOOKY_PLATE
+	.2byte ITEM_TM61
 	pokemartlistend
 
 Basement_Text_Ghostgirl:

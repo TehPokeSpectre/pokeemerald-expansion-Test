@@ -178,7 +178,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 55,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_FORTREE_JUNGLE_HOUSE",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

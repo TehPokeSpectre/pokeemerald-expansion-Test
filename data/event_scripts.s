@@ -1276,3 +1276,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route119HouseWormhole/scripts.inc"
 
 	.include "data/maps/FallarborCaveWormhole/scripts.inc"
+
+	.include "data/maps/FortreeJungleHouse/scripts.inc"

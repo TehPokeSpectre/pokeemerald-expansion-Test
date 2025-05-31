@@ -80,3 +80,23 @@ Dept_PokemartB2__EventScript_Slurpuff::
 Dept_Pokemart_Slurpuff:
 	.string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Slurpuff: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Slurp!$"
 
+LilycoveCity_DepartmentStore_B2_GuyTMs::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart Dept_Pokemart_B2_GuyTMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+Dept_Pokemart_B2_GuyTMs:
+    .2byte ITEM_TM56
+	.2byte ITEM_TM60
+	.2byte ITEM_TM83
+	.2byte ITEM_TM84
+	.2byte ITEM_TM92
+	.2byte ITEM_TM96
+	pokemartlistend
+
