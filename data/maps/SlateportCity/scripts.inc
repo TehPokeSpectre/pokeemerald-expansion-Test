@@ -1506,3 +1506,22 @@ Slateport_EventScript_Kricketune::
 Slateport_Kricketune:
 .string "{COLOR GREEN}{SHADOW LIGHT_GREEN}Kricketune: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Briiiawoon!$"
 
+SlateportCity_EventScript_TMs::
+    lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart SlateportCity_TMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+SlateportCity_TMs:
+    .2byte ITEM_TM55
+	.2byte ITEM_TM66
+	.2byte ITEM_TM67
+	.2byte ITEM_TM69
+	.2byte ITEM_TM70
+	pokemartlistend
+

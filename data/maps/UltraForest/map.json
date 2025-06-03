@@ -78,6 +78,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_STEELIXITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_RECEIVED_STEELIXITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 36,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM57",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ULTRA_FOREST_TM_SMART_STRIKE"
     }
   ],
   "warp_events": [

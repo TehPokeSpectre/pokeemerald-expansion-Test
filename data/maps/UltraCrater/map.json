@@ -91,6 +91,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_GYARADOSITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_RECEIVED_GYARADOSITE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
+      "x": 13,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM90",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_ULTRA_CRATER_TM_SWORDS_DANCE"
     }
   ],
   "warp_events": [
